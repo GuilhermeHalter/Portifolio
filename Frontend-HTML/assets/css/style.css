@@ -9,18 +9,19 @@
 
 html,
 body{
-    height: 100%;
     background: #F8F2DE;
     margin: 0;
 }
 
 header{
+    position: fixed;
     display: flex;
+    background-color: #F8F2DE;
     width: 100%;
     height: 50px;
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
+    z-index: 999;
 }
 
 ul{
@@ -121,11 +122,29 @@ li{
   justify-content: end;
 }
 
+.section4{
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 5%;
+
+}
+
 .background{
     display: flex;
     transform: scaleX(-1);
 }
 
+.titleAbout{
+    color: #61AB41;
+    margin-left: 30%;
+    margin-right: 5%;
+    margin-bottom: 0;
+}
+
+.contAbout{
+    margin-left: 30%;
+    margin-right: 10%;
+}
 
 
   #mouse-scroll {
@@ -135,7 +154,7 @@ li{
     margin-top: 20%;
     left: 75%;
     top: 80px;
-    z-index: 9999;
+    z-index: 999;
   }
   #mouse-scroll span{
     display: block;
@@ -239,6 +258,11 @@ li{
     background-color: #11192B; 
 }
 
+.dark-theme header{
+    transition: 1s;
+    background-color: #11192B;
+}
+
 .dark-theme .navLink {
     transition: 1s;
     color: #fff; 
@@ -286,15 +310,18 @@ li{
 }
 
 .dark-theme  #mouse-scroll span{
+    transition: 1s;
     border-right: 2px solid #AF53F8; 
     border-bottom: 2px solid #AF53F8;
 }
 
-.dark-theme #mouse-scroll .mouse {
+.dark-theme #mouse-scroll .mouse {    
+    transition: 1s;
     border: 2px solid #AF53F8;
 }
 
 .dark-theme #mouse-scroll .mouse-in {
+    transition: 1s;
     background: #AF53F8;
 }
   
