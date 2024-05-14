@@ -146,6 +146,51 @@ li{
     margin-right: 10%;
 }
 
+.section3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.perfil{
+    position: absolute;
+    width: 300px;
+    border: 7px solid #61AB41;
+    border-radius: 50%;
+}
+
+.skills{
+    margin-left: 10%;
+    color: #61AB41;
+}
+
+.cardTitle{
+    margin-left: 5%;
+}
+
+.cardsSkills{
+    display: grid;
+    margin-left: 5%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.card{
+    width: 80%;
+    border: 3px solid #61AB41;
+    border-radius: 10px;
+}
+
+.gridIcons{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    text-align: center;
+}
+
+.card i{
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #61AB41;
+}
 
   #mouse-scroll {
     display: block;
