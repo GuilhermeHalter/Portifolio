@@ -29,6 +29,8 @@ function openModal(cardTitle, icons) {
     const modalIcons = document.querySelector('.modal-content .gridIcons');
     const modalName = document.querySelector('.modal-content .gridName');
 
+    // Limpa o conteúdo anterior antes de adicionar os novos spans
+    modalName.innerHTML = '';
 
     modalTitle.textContent = cardTitle;
     modalIcons.innerHTML = icons;
