@@ -181,6 +181,13 @@ li{
     margin-bottom: 10%;
 }
 
+.card:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+
+}
+
 .gridIcons{
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
@@ -192,6 +199,7 @@ li{
     margin-bottom: 25px;
     color: #61AB41;
 }
+
 
   #mouse-scroll {
     display: block;
@@ -295,6 +303,7 @@ li{
       opacity: 1;
     }
   }
+
 
 
 /* Tema Escuro */
