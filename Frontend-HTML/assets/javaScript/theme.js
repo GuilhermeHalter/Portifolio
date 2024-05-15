@@ -21,3 +21,37 @@ themeToggle.addEventListener('click', () => {
 });
 
 
+const modal = document.getElementById('skillModal');
+const closeBtn = document.querySelector('.close');
+
+function openModal(cardTitle, icons) {
+    const modalTitle = document.querySelector('.modal-content .cardTitle');
+    const modalIcons = document.querySelector('.modal-content .gridIcons');
+
+    modalTitle.textContent = cardTitle;
+    modalIcons.innerHTML = icons;
+
+    modal.style.display = 'block';
+}
+
+function closeModal() {
+    modal.style.display = 'none';
+}
+
+document.querySelectorAll('.card').forEach((card) => {
+    card.addEventListener('click', () => {
+        const cardTitle = card.querySelector('.cardTitle').textContent;
+        const iconsHTML = card.querySelector('.gridIcons').innerHTML;
+        openModal(cardTitle, iconsHTML);
+    });
+});
+
+closeBtn.addEventListener('click', closeModal);
+
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
+
+
