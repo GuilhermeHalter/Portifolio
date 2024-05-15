@@ -111,43 +111,42 @@
           <div class="card frontend">
             <h2 class="cardTitle">Front-End</h2>
             <div class="gridIcons">
-              <i class="fa-brands fa-html5"></i> 
-              <i class="fa-brands fa-css3-alt" ></i>
-              <i class="fa-brands fa-vuejs"></i>
-              <i class="fa-brands fa-react"></i>
-              <i class="fa-brands fa-react"></i>
-              <i class="fa-brands fa-bootstrap"></i>
-              <i class="devicon-vitejs-plain"></i>
+              <i class="fa-brands fa-html5" data-name="HTML"></i>
+              <i class="fa-brands fa-css3-alt" data-name="CSS"></i>
+              <i class="fa-brands fa-vuejs" data-name="Vue.js"></i>
+              <i class="fa-brands fa-react" data-name="React.js"></i>
+              <i class="fa-brands fa-react" data-name="React Native"></i>
+              <i class="fa-brands fa-bootstrap" data-name="Bootstrap"></i>
+              <i class="devicon-vitejs-plain" data-name="Vite.js"></i>
             </div>
-           
           </div>
           <div class="card backend">
             <h2 class="cardTitle">Back-End</h2>
             <div class="gridIcons">
-              <i class="devicon-postgresql-plain"></i>
-              <i class="devicon-microsoftsqlserver-plain"></i>
-              <i class="devicon-mysql-original"></i>
-              <i class="devicon-django-plain"></i>
+              <i class="devicon-postgresql-plain" data-name="PostgreSql"></i>
+              <i class="devicon-microsoftsqlserver-plain" data-name="Microsoft Sql Server"></i>
+              <i class="devicon-mysql-original" data-name="MySql"></i>
+              <i class="devicon-django-plain" data-name="Django" ></i>
             </div>
           </div>
           <div class="card languages">
             <h2 class="cardTitle">Linguagens de Programação</h2>
             <div class="gridIcons">
-              <i class="devicon-javascript-plain"></i>
-              <i class="devicon-python-plain"></i>
-              <i class="devicon-c-plain"></i>
-              <i class="devicon-cplusplus-plain"></i>
-              <i class="devicon-php-plain"></i>
+              <i class="devicon-javascript-plain" data-name="JavaScript"></i>
+              <i class="devicon-python-plain" data-name="Python"></i>
+              <i class="devicon-c-plain" data-name="C"></i>
+              <i class="devicon-cplusplus-plain" data-name="C plus plus"></i>
+              <i class="devicon-php-plain" data-name="PHP"></i>
             </div>
           </div>
           <div class="card cicd">
-                <h2 class="cardTitle">CI / CD</h2>
-                <div class="gridIcons">
-                  <i class="devicon-git-plain"></i>
-                  <i class="devicon-github-original"></i>
-                  <i class="devicon-nodejs-plain"></i>
-                  <i class="devicon-npm-original-wordmark"></i>
-                  <i class="devicon-markdown-original"></i>
+            <h2 class="cardTitle">CI / CD</h2>
+            <div class="gridIcons">
+              <i class="devicon-git-plain" data-name="Git"></i>
+              <i class="devicon-github-original" data-name="GitHub"></i>
+              <i class="devicon-nodejs-plain" data-name="Node.js"></i>
+              <i class="devicon-npm-original-wordmark" data-name="Npm"></i>
+              <i class="devicon-markdown-original" data-name="MarkDown"></i>
             </div>
           </div>
         </div>
@@ -170,15 +169,21 @@
 
       </div> -->
     </main>
-    
+
     <div id="skillModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 class="cardTitle"></h2>
-            <div class="gridIcons">
-                <!-- Aqui serão inseridos os ícones dos skills específicos -->
-            </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 class="cardTitle"></h2>
+        <p id="modalSkillName"></p>
+        <!-- Adicionando o elemento modalSkillName aqui -->
+
+        <div class="gridContainer">
+          <div class="gridIcons">
+            <!-- Aqui serão inseridos os ícones dos skills específicos -->
+          </div>
+          <div class="gridName"></div>
         </div>
+      </div>
     </div>
 
     <script src="./assets/javaScript/theme.js"></script>

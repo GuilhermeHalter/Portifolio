@@ -223,10 +223,43 @@ li{
     background-color: #fefefe;
     margin: 10% auto; 
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    border: 3px solid #61AB41;
+    width: 40%;
   }
-  
+
+  .modal-content .gridIcons{
+    display: flex;
+    width: 15%;
+    color: #61AB41;
+    margin-bottom: 15px;
+    font-size: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .modal-content .gridContainer{
+    display: flex;
+  }
+
+  .modal-content .gridIcons i{
+    margin-bottom: 5px; /* Reduza a margem inferior para um espaçamento mais compacto */
+  }
+
+  .modal-content .gridName{
+    width: 70%;
+    color: #61AB41;
+  }
+
+  .modal-content .gridName span{
+    display: flex;
+    width: 70%;
+    color: #61AB41;
+    margin-bottom: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
   .close {
     color: #aaa;
     float: right;
@@ -240,7 +273,7 @@ li{
     text-decoration: none;
     cursor: pointer;
   }
-  
+
 
 
   #mouse-scroll {

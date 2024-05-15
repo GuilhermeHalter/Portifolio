@@ -27,9 +27,20 @@ const closeBtn = document.querySelector('.close');
 function openModal(cardTitle, icons) {
     const modalTitle = document.querySelector('.modal-content .cardTitle');
     const modalIcons = document.querySelector('.modal-content .gridIcons');
+    const modalName = document.querySelector('.modal-content .gridName');
+
 
     modalTitle.textContent = cardTitle;
     modalIcons.innerHTML = icons;
+
+    // Adicionando os nomes dos ícones ao lado dos ícones correspondentes
+    const iconElements = modalIcons.querySelectorAll('i');
+    iconElements.forEach(icon => {
+        const iconName = icon.dataset.name;
+        const nameElement = document.createElement('span');
+        nameElement.textContent = iconName;
+        modalName.appendChild(nameElement);
+    });
 
     modal.style.display = 'block';
 }
@@ -53,5 +64,3 @@ window.addEventListener('click', (event) => {
         closeModal();
     }
 });
-
-
