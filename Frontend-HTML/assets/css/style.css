@@ -109,6 +109,13 @@ li{
     justify-content: space-between;
 }
 
+.About{
+  display: inline-flex;
+  width: 100%;
+  height: 548px;
+  justify-content: space-between;
+}
+
 .section1{
     width: 50%;
     margin-top: 10%;
@@ -192,13 +199,168 @@ li{
     cursor: pointer;
     transition: 0.5s;
     transform: scale(1.1);
+}
 
+.Cards{
+   display: flex;
+   margin-bottom: 2%;
+}
+
+.cardProj{
+  display: flex;
+  width: 60%;
+  padding: 1%;
+  height: 250px;
+  margin-left: 5%;
+  border: 3px solid #61AB41;
+  border-radius: 10px;
+}
+
+.cardGit{
+  width: 25%;
+  margin-left: 2%;
+  border: 3px solid #61AB41;
+  border-radius: 10px;
+}
+
+.cardProjet{
+  display: flex;
+  width: 60%;
+  padding: 1%;
+  height: 250px;
+  margin-left: 2%;
+  border: 3px solid #61AB41;
+  border-radius: 10px;
+}
+
+.cardGithub{
+  width: 25%;
+  margin-left: 5%;
+  border: 3px solid #61AB41;
+  border-radius: 10px;
+}
+
+.viewProject{
+  width: 20%;
+  font-size: 10px;
+}
+
+.Contact{
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+/* Estilo para o formulário */
+form {
+  display: flex;
+}
+
+.titleContact{
+  color: #61AB41;
+}
+
+.nameEmail{
+  width: 100%;
+}
+
+.message{
+  width: 100%;
+  display: block;
+}
+
+/* Estilo para os rótulos */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Estilo para os campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 90%; /* 50% do espaço disponível, menos a margem */
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Garante que o padding não aumente o tamanho do input */
+}
+
+/* Estilo para o campo de mensagem */
+textarea {
+  width: 90%; /* Ocupa todo o espaço disponível na linha */
+  height: 130px; /* Altura fixa para o campo de mensagem */
+}
+
+/* Estilo para o botão de envio */
+input[type="submit"] {
+  padding: 10px 20px;
+  color: #4CAF50;
+  font-weight: bold;
+  border: 2px solid #4CAF50;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+/* Estilo para o botão de envio quando o cursor está sobre ele */
+input[type="submit"]:hover {
+  transition: 0.5s;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+
+.imgProject{
+  width: 180%;
+  border-radius: 5%;
+}
+
+.cardDescription{
+  margin-left: 5%;
 }
 
 .gridIcons{
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     text-align: center;
+}
+.up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 10%;
+
+}
+
+.up i {
+    font-size: 35px;
+    color: #61AB41;
+}
+
+.down{
+    align-items: center;
+    height: 55%;
+    padding: 12px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background-color: #61ab412c;
+    font-size: 15px;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+
+.down i {
+    font-size: 27px;
+    margin-top: 5%;
+    margin-right: 5%;
+    color: #61AB41;
 }
 
 .card i{
@@ -525,7 +687,7 @@ li{
 
 .dark-theme .modal-content{
     transition: 1s;
-    background-color: #080b11;
+    background-color: #191f2f;
     border: 3px solid #AF53F8;
 }
 

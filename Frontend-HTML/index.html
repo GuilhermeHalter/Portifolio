@@ -79,7 +79,7 @@
         </div>
       </div>
 
-      <div class="sections">
+      <div class="About">
         <div class="section3">
           <img
             src="./assets/media/backgroundgreen-removebg-preview.png"
@@ -102,7 +102,7 @@
         </div>
       </div>
 
-      <div class="">
+      <div class="MySkills">
         <div class="section5">
           <h1 class="skills">My Skills.</h1>
         </div>
@@ -124,9 +124,12 @@
             <h2 class="cardTitle">Back-End</h2>
             <div class="gridIcons">
               <i class="devicon-postgresql-plain" data-name="PostgreSql"></i>
-              <i class="devicon-microsoftsqlserver-plain" data-name="Microsoft Sql Server"></i>
+              <i
+                class="devicon-microsoftsqlserver-plain"
+                data-name="Microsoft Sql Server"
+              ></i>
               <i class="devicon-mysql-original" data-name="MySql"></i>
-              <i class="devicon-django-plain" data-name="Django" ></i>
+              <i class="devicon-django-plain" data-name="Django"></i>
             </div>
           </div>
           <div class="card languages">
@@ -147,29 +150,143 @@
               <i class="devicon-nodejs-plain" data-name="Node.js"></i>
               <i class="devicon-npm-original-wordmark" data-name="Npm"></i>
               <i class="devicon-markdown-original" data-name="MarkDown"></i>
-              <i class="devicon-vscode-plain" data-name="Visual Studio Code"></i>
+              <i
+                class="devicon-vscode-plain"
+                data-name="Visual Studio Code"
+              ></i>
               <i class="devicon-figma-plain" data-name="Figma"></i>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Cards de projetos -->
-
-      <!-- <div class="Cards">
-            <div class="card">
-                <h2 class="cardTitle">Front-End</h2>
-                <p class="cardDescription">
+      <div class="Projects">
+        <h1 class="skills">Project's</h1>
+        <div class="Cards">
+          <div class="cardProj">
+            <img src="./assets/media/perfil.png" alt="" class="imgProject" />
+            <div class="contProject">
+              <h2 class="cardTitle">Museu Novo Mundo</h2>
+              <p class="cardDescription">
                 Desenvolvimento de interfaces de usuário, utilizando HTML, CSS e
                 JavaScript, com foco em usabilidade e experiência do usuário.
-                </p>
+              </p>
             </div>
-            <div class="subCard">
-                <h2>Github</h2>
+            <div class="viewProject">
+              View <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </div>
-    
+          </div>
 
-      </div> -->
+          <div class="cardGit">
+            <div class="up">
+              <span>View repository on GitHub</span>
+              <i class="devicon-github-original"></i>
+            </div>
+
+            <div class="down">
+              <span>Ferramentas usadas nesse projetos</span>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+
+              <p>Projeto desenvolvido por: Guilherme Halter Nunes</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="Cards">
+          <div class="cardGithub">
+            <div class="up">
+              <span>View repository on GitHub</span>
+              <i class="devicon-github-original"></i>
+            </div>
+
+            <div class="down">
+              <span>Ferramentas usadas nesse projetos</span>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+
+              <p>Projeto desenvolvido por: Guilherme Halter Nunes</p>
+            </div>
+          </div>
+
+          <div class="cardProjet">
+            <img src="./assets/media/perfil.png" alt="" class="imgProject" />
+            <div class="contProject">
+              <h2 class="cardTitle">Museu Novo Mundo</h2>
+              <p class="cardDescription">
+                Desenvolvimento de interfaces de usuário, utilizando HTML, CSS e
+                JavaScript, com foco em usabilidade e experiência do usuário.
+              </p>
+            </div>
+            <div class="viewProject">
+              View <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="Cards">
+        <div class="cardProj">
+          <img src="./assets/media/perfil.png" alt="" class="imgProject" />
+          <div class="contProject">
+            <h2 class="cardTitle">Museu Novo Mundo</h2>
+            <p class="cardDescription">
+              Desenvolvimento de interfaces de usuário, utilizando HTML, CSS e
+              JavaScript, com foco em usabilidade e experiência do usuário.
+            </p>
+          </div>
+          <div class="viewProject">
+            View <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+        </div>
+
+        <div class="cardGit">
+          <div class="up">
+            <span>View repository on GitHub</span>
+            <i class="devicon-github-original"></i>
+          </div>
+
+          <div class="down">
+            <span>Ferramentas usadas nesse projetos</span>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+
+            <p>Projeto desenvolvido por: Guilherme Halter Nunes</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="Contact">
+        <h1 class="titleContact">Contact.</h1>
+
+        <h1>Send me an email</h1>
+        <form action="./assets/php/enviar.php" method="post">
+
+          <div class="nameEmail">
+              <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+  
+            <label for="email">Endereço de Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        
+          <div class="message">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+  
+            <input type="submit" value="Enviar">
+          </div>
+          
+      </form>
+      </div>
+
+
+
+
     </main>
 
     <div id="skillModal" class="modal">
