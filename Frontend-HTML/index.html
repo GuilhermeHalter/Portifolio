@@ -17,7 +17,7 @@
     <title>Guilherme Halter Nunes</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <img
         src="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2FGgreen-removebg-preview.png?alt=media&token=bbb7e6a0-ef5f-41d6-bb2d-c9e0c9d5d609"
         alt="logo"
@@ -25,15 +25,16 @@
         id="logoImage"
       />
       <ul>
-        <li><a href="" class="navLink">About</a></li>
-        <li><a href="" class="navLink">Project's</a></li>
-        <li><a href="" class="navLink">Contact</a></li>
+        <li><a href="#about" class="navLink">About</a></li>
+        <li><a href="#skills" class="navLink">My Skill's</a></li>
+        <li><a href="#projects" class="navLink">Project's</a></li>
+        <li><a href="#contact" class="navLink">Contact</a></li>
         <li><i class="fa-solid fa-circle-half-stroke" id="themeToggle"></i></li>
       </ul>
     </header>
 
     <main>
-      <div class="sections">
+      <div id="home" class="sections">
         <div class="section1">
           <h3 class="homeSubtitle">Hi, my name is</h3>
           <h1 class="myName">Guilherme Halter Nunes</h1>
@@ -79,7 +80,7 @@
         </div>
       </div>
 
-      <div class="About">
+      <div id="about" class="About">
         <div class="section3">
           <img
             src="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2Fbackgroundgreen-removebg-preview.png?alt=media&token=da8c49e6-51c8-4031-b16e-a962b0f4f3ea"
@@ -89,7 +90,7 @@
           <img src="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2Fperfil.png?alt=media&token=a2c65334-f791-45e2-9647-48ecdc3e9a2a" alt="" class="perfil" />
         </div>
 
-        <div class="section4">
+        <div  class="section4">
           <h1 class="titleAbout">About.</h1>
           <p class="contAbout">
             Sou um programador de 18 anos de Santa Catarina, Brasil. Em 2021,
@@ -102,7 +103,7 @@
         </div>
       </div>
 
-      <div class="MySkills">
+      <div id="skills" class="MySkills">
         <div class="section5">
           <h1 class="skills">My Skills.</h1>
         </div>
@@ -158,7 +159,8 @@
         </div>
       </div>
 
-      <div class="Projects">
+      <div   id="projects" class="Projects">
+
         <h1 class="skills">Project's</h1>
         <div class="Cards">
           <a
@@ -229,21 +231,22 @@
       </div>
 
       <div class="Cards">
-        <div class="cardProj">
-          <img src="" alt="" class="imgProject" />
+        <a href="https://museu-velho-mundo-react.vercel.app/" class="linkSite">
+          <img src="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2FprintMuseu.jpeg?alt=media&token=17beef85-cb23-4957-b9be-9448a1f78ab5" alt="" class="imgProject" />
           <div class="contProject">
-            <h2 class="cardTitle">Museu Novo Mundo</h2>
+            <h2 class="cardTitle">Museu do Velho Mundo</h2>
             <p class="cardDescription">
-              Desenvolvimento de interfaces de usuário, utilizando HTML, CSS e
-              JavaScript, com foco em usabilidade e experiência do usuário.
+              O Museu do Velho Mundo é um projeto que criei para simular um
+              museu virtual, onde você pode visualizar obras de arte e
+              esculturas de diversos artistas renomados. 
             </p>
           </div>
           <div class="viewProject">
             View <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </div>
-        </div>
+        </a>
 
-        <div class="cardGit">
+        <a href="https://github.com/GuilhermeHalter/MuseuVelhoMundo-react" class="cardGit">
           <div class="up">
             <span>View repository on GitHub</span>
             <i class="devicon-github-original"></i>
@@ -252,16 +255,18 @@
           <div class="down">
             <span>Ferramentas usadas nesse projetos</span>
             <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-html5"></i>
             <i class="fa-brands fa-css3-alt"></i>
+            <i class="devicon-javascript-plain" data-name="JavaScript"></i> 
+
+            <p>e uma API do Harvard Museums. (Link para a API no Readme do projeto no GitHub)</p>
           </div>
-        </div>
+        </a>
       </div>
 
-      <div class="Contact">
+      <div id="contact" class="Contact">
         <h1 class="titleContact">Contact.</h1>
 
-        <h1>Send me an email</h1>
+        <h1 class="subTitleContact">Send me an email</h1>
         <form action="./assets/php/enviar.php" method="post">
           <div class="nameEmail">
             <label for="nome">Nome:</label>
@@ -305,5 +310,6 @@
 
     <script src="./assets/javaScript/theme.js"></script>
     <script src="./assets/javaScript/modal.js"></script>
+    <script src="./assets/javaScript/scroll.js"></script>
   </body>
 </html>
