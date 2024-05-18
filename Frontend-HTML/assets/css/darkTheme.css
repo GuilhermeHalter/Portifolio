@@ -10,7 +10,9 @@ header,
 .myName, 
 .meDescription, 
 .icons, 
-.icons:hover, 
+.icons:hover,
+.iconsContact i,
+.iconsContact p,
 i.fa-moon, 
 #mouse-scroll span, 
 #mouse-scroll .mouse, 
@@ -94,6 +96,14 @@ input[type="submit"]:hover {
 
 .dark-theme .icons:hover {
     color: #472365;
+}
+
+.dark-theme .iconsContact i {
+    color: #AF53F8;
+}
+
+.dark-theme .iconsContact p {
+    color: #fff;
 }
 
 .dark-theme i.fa-moon {
