@@ -10,10 +10,13 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/darkTheme.css">
+    <link rel="stylesheet" href="./assets/css/iconsModal.css">
     <script
       src="https://kit.fontawesome.com/36c242ccb3.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/i18next@21.9.2/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
 
     <title>Guilherme Halter Nunes</title>
   </head>
@@ -26,22 +29,28 @@
         id="logoImage"
       />
       <ul>
-        <li><a href="#about" class="navLink">About</a></li>
-        <li><a href="#skills" class="navLink">My Skill's</a></li>
-        <li><a href="#projects" class="navLink">Project's</a></li>
-        <li><a href="#contact" class="navLink">Contact</a></li>
+        <li><a href="#about" class="navLink" data-i18n="about">About</a></li>
+        <li><a href="#skills" class="navLink" data-i18n="mySkills">My Skill's</a></li>
+        <li><a href="#projects" class="navLink" data-i18n="projects">Project's</a></li>
+        <li><a href="#contact" class="navLink" data-i18n="contact">Contact</a></li>
         <li><i class="fa-solid fa-circle-half-stroke" id="themeToggle"></i></li>
+        <li>
+          <select id="languageSwitcher">
+            <option value="pt-BR">Português</option>
+            <option value="en">English</option>
+          </select>
+        </li>
       </ul>
     </header>
 
     <main>
       <div id="home" class="sections">
         <div class="section1">
-          <h3 class="homeSubtitle">Hi, my name is</h3>
-          <h1 class="myName">Guilherme Halter Nunes</h1>
-          <h3 class="meDescription">Full Stack, Web Developer</h3>
+          <h3 class="homeSubtitle" data-i18n="helloMyName">Hi, my name is</h3>
+          <h1 class="myName" data-i18n="myName">Guilherme Halter Nunes</h1>
+          <h3 class="meDescription"  data-i18n="profession">Full Stack, Web Developer</h3>
           <a
-            href="https://www.linkedin.com/in/guilherme-halter-nunes/"
+            href="https://www.linkedin.com/in/guilherme-halter-nunes/"   
             class="icons"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
@@ -92,8 +101,8 @@
         </div>
 
         <div  class="section4">
-          <h1 class="titleAbout">About.</h1>
-          <p class="contAbout">
+          <h1 class="titleAbout" data-i18n="titleAbout">About.</h1>
+          <p class="contAbout" data-i18n="textAboutMe">
             Sou um programador de 18 anos de Santa Catarina, Brasil. Em 2021,
             iniciei minha jornada no mundo da programação e desde então venho me
             aprofundando cada vez mais nesse universo fascinante. Atualmente, me
@@ -106,7 +115,7 @@
 
       <div id="skills" class="MySkills">
         <div class="section5">
-          <h1 class="skills">My Skills.</h1>
+          <h1 class="skills" data-i18n="titleMySkill">My Skills.</h1>
         </div>
 
         <div class="cardsSkills">
@@ -135,7 +144,7 @@
             </div>
           </div>
           <div class="card languages">
-            <h2 class="cardTitle">Linguagens de Programação</h2>
+            <h2 class="cardTitle" data-i18n="programmingLanguages">Linguagens de Programação</h2>
             <div class="gridIcons">
               <i class="devicon-javascript-plain" data-name="JavaScript"></i>
               <i class="devicon-python-plain" data-name="Python"></i>
@@ -162,7 +171,7 @@
 
       <div   id="projects" class="Projects">
 
-        <h1 class="skills">Project's</h1>
+        <h1 class="skills" data-i18n="titleProjects">Project's</h1>
         <div class="Cards">
           <a
             href="https://desafio-ponto-vendas-ozd38hbh5-guilherme-halter-nunes-projects.vercel.app/"
@@ -175,7 +184,7 @@
             />
             <div class="contProject">
               <h2 class="cardTitle">Suite Store</h2>
-              <p class="cardDescription">
+              <p class="cardDescription" data-i18n="textSuite">
                 A Suite Store é o projeto que criei para simplificar a gestão e
                 controle de estoque da sua loja. Com ela, você pode manter tudo
                 sob controle, desde o estoque até as vendas.
@@ -191,12 +200,12 @@
             class="cardGit"
           >
             <div class="up">
-              <span>View repository on GitHub</span>
+              <span data-i18n="viewRepository">View repository on GitHub</span>
               <i class="devicon-github-original"></i>
             </div>
 
             <div class="down">
-              <span>Ferramentas usadas nesse projetos</span>
+              <span data-i18n="tools">Ferramentas usadas nesse projetos</span>
               <i class="fa-brands fa-html5"></i>
               <i class="fa-brands fa-css3-alt"></i>
               <i class="devicon-javascript-plain" data-name="JavaScript"></i>
@@ -207,12 +216,12 @@
         <div class="Cards">
           <a href="https://github.com/GuilhermeHalter/Projeto_ControleTermicoSuinos" class="cardGithub">
             <div class="up">
-              <span>View repository on GitHub</span>
+              <span data-i18n="viewRepository">View repository on GitHub</span>
               <i class="devicon-github-original"></i>
             </div>
 
             <div class="down">
-              <span>Ferramentas usadas nesse projetos</span>
+              <span data-i18n="tools">Ferramentas usadas nesse projetos</span>
               <i class="devicon-arduino-plain" data-name="Arduino"></i>
               <i class="devicon-cplusplus-plain" data-name="C plus plus"></i>
 
@@ -222,7 +231,7 @@
             <img src="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/ArduinoSuino.jpeg?alt=media&token=2b726efa-529d-4c03-aa40-626dccfc9125" alt="" class="imgProjectA" />
             <div class="contProject">
               <h2 class="cardTitle">Controle de Conforto Termico na Creche dos Suinos</h2>
-              <p class="cardDescription">
+              <p class="cardDescription" data-i18n="textArduino">
                 Desenvolvi esse projeto no TCC do meu curso técnico em Informática, 
                 com o objetivo de controlar o conforto térmico na creche dos suínos, utilizando sensores de temperatura e umidade.
               </p>
@@ -236,7 +245,7 @@
           <img src="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2FprintMuseu.jpeg?alt=media&token=17beef85-cb23-4957-b9be-9448a1f78ab5" alt="" class="imgProject" />
           <div class="contProject">
             <h2 class="cardTitle">Museu do Velho Mundo</h2>
-            <p class="cardDescription">
+            <p class="cardDescription" data-i18n="textMuseu">
               O Museu do Velho Mundo é um projeto que criei para simular um
               museu virtual, onde você pode visualizar obras de arte e
               esculturas de diversos artistas renomados. 
@@ -249,36 +258,36 @@
 
         <a href="https://github.com/GuilhermeHalter/MuseuVelhoMundo-react" class="cardGit">
           <div class="up">
-            <span>View repository on GitHub</span>
+            <span data-i18n="viewRepository">View repository on GitHub</span>
             <i class="devicon-github-original"></i>
           </div>
 
           <div class="down">
-            <span>Ferramentas usadas nesse projetos</span>
+            <span data-i18n="tools">Ferramentas usadas nesse projetos</span>
             <i class="fa-brands fa-react"></i>
             <i class="fa-brands fa-css3-alt"></i>
             <i class="devicon-javascript-plain" data-name="JavaScript"></i> 
 
-            <p>e uma API do Harvard Museums. (Link para a API no Readme do projeto no GitHub)</p>
+            <p data-i18n="plusTools">e uma API do Harvard Museums. (Link para a API no Readme do projeto no GitHub)</p>
           </div>
         </a>
       </div>
 
       <div id="contact" class="Contact">
-        <h1 class="titleContact">Contact.</h1>
+        <h1 class="titleContact" data-i18n="titleContact">Contact.</h1>
 
-        <h1 class="subTitleContact">Send me an email</h1>
+        <h1 class="subTitleContact" data-i18n="sendEmail">Send me an email</h1>
         <form action="./assets/php/enviar.php" method="post">
           <div class="nameEmail">
-            <label for="nome">Nome:</label>
+            <label for="nome" data-i18n="name">Nome:</label>
             <input type="text" id="nome" name="nome" required />
 
-            <label for="email">Endereço de Email:</label>
+            <label for="email" data-i18n="email">Endereço de Email:</label>
             <input type="email" id="email" name="email" required />
           </div>
 
           <div class="message">
-            <label for="mensagem">Mensagem:</label>
+            <label for="mensagem" data-i18n="message">Mensagem:</label>
             <textarea
               id="mensagem"
               name="mensagem"
@@ -310,7 +319,18 @@
     </div>
 
     <footer>
-      <p>© 2024 Guilherme Halter Nunes. All rights reserved.</p>
+            <div class="col-md-5">
+              <h3 data-i18n="contactUs">Contact Us</h3>
+              <p>halter.guilhermenunes@gmail.com</p>
+            </div>
+            <div class="col-md-6">
+              <h3 data-i18n="followUs">Follow Us</h3>
+              <ul class="social-media">
+                <li><a href="https://www.instagram.com/guilhermehalter/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/guilherme-halter-nunes/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/GuilhermeHalter"><i class="fa-brands fa-github"></i></a></li>
+              </ul>
+            </div>      
     </footer>
 
     <script src="./assets/javaScript/theme.js"></script>

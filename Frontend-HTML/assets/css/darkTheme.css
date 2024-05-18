@@ -1,215 +1,231 @@
+body {
+    transition: background-color 1s;
+}
+
+#themeToggle, 
+header, 
+.navLink, 
+.navLink:hover, 
+.homeSubtitle, 
+.myName, 
+.meDescription, 
+.icons, 
+.icons:hover, 
+i.fa-moon, 
+#mouse-scroll span, 
+#mouse-scroll .mouse, 
+#mouse-scroll .mouse-in, 
+.perfil, 
+.titleAbout, 
+.contAbout, 
+.skills, 
+.card, 
+.cardTitle, 
+.card i, 
+.modal-content, 
+.modal-content .gridName span, 
+.modal-content .gridIcons .devicon-github-original, 
+.modal-content .gridIcons .devicon-markdown-original, 
+.linkSite, 
+.cardDescription, 
+.viewProject, 
+.cardGit, 
+.up, 
+.up i, 
+.down, 
+.down i, 
+.cardGithub, 
+.cardProjet, 
+.gridIcons, 
+.titleContact, 
+.nameEmail, 
+.message, 
+.subTitleContact, 
+input[type="submit"], 
+input[type="submit"]:hover {
+    transition: color 1s, background-color 1s, border 1s;
+}
+
+/* Adiciona a transição específica para navLink::before */
+.navLink::before {
+    content: "";
+    transition: background-color 1s;
+}
+
 .dark-theme {
-    transition: 1s;
     background-color: #11192B; 
 }
 
-.dark-theme #themeToggle{
-    transition: 1s;
+.dark-theme #themeToggle {
     color: #fff;
 }
 
-.dark-theme header{
-    transition: 1s;
+.dark-theme header {
     background-color: #11192B;
 }
 
 .dark-theme .navLink {
-    transition: 1s;
     color: #fff; 
 }
 
 .dark-theme .navLink:hover {
-    transition: 1s;
     color: #AF53F8; 
 }
 
-.dark-theme .homeSubtitle{
-    transition: 1s;
+.dark-theme .homeSubtitle {
     color: #AF53F8;
 }
 
-.dark-theme  .navLink::before{
-    transition: 1s;
+.dark-theme .navLink::before {
     background-color: #AF53F8;
 }
 
-.dark-theme .myName{
-    transition: 1s;
+.dark-theme .myName {
     color: #fff;
 }
 
-.dark-theme .meDescription{
-    transition: 1s;
+.dark-theme .meDescription {
     color: #fff;
 }
 
-.dark-theme .icons{
-    transition: 1s;
+.dark-theme .icons {
     color: #AF53F8;
 }
 
-.dark-theme .icons:hover{
-    transition: 0.5s;
+.dark-theme .icons:hover {
     color: #472365;
 }
 
-
 .dark-theme i.fa-moon {
-    transition: 1s;
     color: #AF53F8;
 }
 
-.dark-theme  #mouse-scroll span{
-    transition: 1s;
+.dark-theme #mouse-scroll span {
     border-right: 2px solid #AF53F8; 
     border-bottom: 2px solid #AF53F8;
 }
 
 .dark-theme #mouse-scroll .mouse {    
-    transition: 1s;
     border: 2px solid #AF53F8;
 }
 
 .dark-theme #mouse-scroll .mouse-in {
-    transition: 1s;
     background: #AF53F8;
 }
 
-.dark-theme .perfil{
-    transition: 1s;
+.dark-theme .perfil {
     border: 7px solid #AF53F8;
 }
 
-.dark-theme .titleAbout{
-    transition: 1s;
+.dark-theme .titleAbout {
     color: #AF53F8;
 }
 
-.dark-theme .contAbout{
-    transition: 1s;
+.dark-theme .contAbout {
     color: #fff;
 }
 
-.dark-theme .skills{
-    transition: 1s;
+.dark-theme .skills {
     color: #AF53F8;
 }
 
-.dark-theme .card{
-    transition: 1s;
+.dark-theme .card {
     border: 3px solid #AF53F8;
 }
 
-.dark-theme .cardTitle{
-    transition: 1s;
+.dark-theme .cardTitle {
     color: #fff;
 }
 
-.dark-theme .card i{
-    transition: 1s;
+.dark-theme .card i {
     color: #AF53F8;
 }
 
-.dark-theme .modal-content{
-    transition: 1s;
+.dark-theme .modal-content {
     background-color: #191f2f;
     border: 3px solid #AF53F8;
 }
 
-.dark-theme .modal-content .gridName span{
-    transition: 1s;
+.dark-theme .modal-content .gridName span {
     color: #AF53F8;
 }
-  
-.dark-theme .modal-content .gridIcons .devicon-github-original{color: #fff;}
-.dark-theme .modal-content .gridIcons .devicon-markdown-original{color: #fff;}
 
-.dark-theme .linkSite{
-    transition: 1s;
+.dark-theme .modal-content .gridIcons .devicon-github-original {
+    color: #fff;
+}
+
+.dark-theme .modal-content .gridIcons .devicon-markdown-original {
+    color: #fff;
+}
+
+.dark-theme .linkSite {
     border: 3px solid #AF53F8;
 }
 
-.dark-theme .cardDescription{
-    transition: 1s;
+.dark-theme .cardDescription {
+    color: #a4a4a4;
+}
+
+.dark-theme .viewProject {
     color: #fff;
 }
 
-.dark-theme .viewProject{
-    transition: 1s;
-    color: #fff;
-}
-
-.dark-theme .cardGit{
-    transition: 1s;
+.dark-theme .cardGit {
     border: 3px solid #AF53F8;
 }
 
-.dark-theme .up{
-    transition: 1s;
+.dark-theme .up {
     color: #fff;
 }
 
-.dark-theme .up i{
-  transition: 1s;
-  color: #AF53F8;
+.dark-theme .up i {
+    color: #AF53F8;
 }
 
-.dark-theme .down{
-    transition: 1s;
+.dark-theme .down {
     background-color: #ae53f83a;
     color: #fff;
 }
 
-.dark-theme .down i{
-    transition: 1s;
+.dark-theme .down i {
     color: #AF53F8;
 }
 
-.dark-theme .cardGithub{
-    transition: 1s;
+.dark-theme .cardGithub {
     border: 3px solid #AF53F8;
 }
 
-.dark-theme .cardProjet{
-    transition: 1s;
+.dark-theme .cardProjet {
     border: 3px solid #AF53F8;
 }
 
-.dark-theme .gridIcons{
-    transition: 1s;
+.dark-theme .gridIcons {
     color: #AF53F8;
 }
 
-.dark-theme .titleContact{
-    transition: 1s;
+.dark-theme .titleContact {
     color: #AF53F8;
 }
 
-.dark-theme .nameEmail{
-    transition: 1s;
+.dark-theme .nameEmail {
     color: #fff;
 }
 
-.dark-theme .message{
-    transition: 1s;
+.dark-theme .message {
     color: #fff;
 }
 
-
-.dark-theme .subTitleContact{
-    transition: 1s;
+.dark-theme .subTitleContact {
     color: #ffffff;
 }
 
 .dark-theme input[type="submit"] {
-    transition: 1s;
     background-color: transparent;
     color: #AF53F8;
     border: 2px solid #AF53F8;
 }
 
 .dark-theme input[type="submit"]:hover {
-    transition: 1s;
     background-color: #AF53F8;
     color: white;
 }
