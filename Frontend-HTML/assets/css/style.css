@@ -71,6 +71,20 @@ footer {
   margin-left: 10%;
 }
 
+select {
+  width: 100%;
+  padding: 2px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #61AB41;
+}
+
+option{
+  background-color: #f8f2de;
+  color: #494949;
+}
+
+
 .social-media {
   width: 40%;
   margin-left: -15px;

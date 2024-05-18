@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/darkTheme.css">
     <link rel="stylesheet" href="./assets/css/iconsModal.css">
+    <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2FGgreen-removebg-preview.png?alt=media&token=bbb7e6a0-ef5f-41d6-bb2d-c9e0c9d5d609" type="image/x-icon">
     <script
       src="https://kit.fontawesome.com/36c242ccb3.js"
       crossorigin="anonymous"
@@ -29,15 +30,19 @@
         id="logoImage"
       />
       <ul>
-        <li><a href="#about" class="navLink" data-i18n="about">About</a></li>
-        <li><a href="#skills" class="navLink" data-i18n="mySkills">My Skill's</a></li>
-        <li><a href="#projects" class="navLink" data-i18n="projects">Project's</a></li>
-        <li><a href="#contact" class="navLink" data-i18n="contact">Contact</a></li>
+        <li><a href="#about" class="navLink" data-i18n="about">sobre</a></li>
+        <li><a href="#skills" class="navLink" data-i18n="mySkills">Minhas habilidades</a></li>
+        <li><a href="#projects" class="navLink" data-i18n="projects">Projetos</a></li>
+        <li><a href="#contact" class="navLink" data-i18n="contact">Contato</a></li>
         <li><i class="fa-solid fa-circle-half-stroke" id="themeToggle"></i></li>
         <li>
-          <select id="languageSwitcher">
-            <option value="pt-BR">Português</option>
-            <option value="en">English</option>
+          <select id="languageSwitcher" title="Selecione o idioma">
+            <option value="pt-BR">
+              Português (pt-BR)
+            </option>
+            <option value="en">
+              English (en)
+            </option>
           </select>
         </li>
       </ul>
@@ -46,9 +51,9 @@
     <main>
       <div id="home" class="sections">
         <div class="section1">
-          <h3 class="homeSubtitle" data-i18n="helloMyName">Hi, my name is</h3>
+          <h3 class="homeSubtitle" data-i18n="helloMyName">Olá, meu nome é</h3>
           <h1 class="myName" data-i18n="myName">Guilherme Halter Nunes</h1>
-          <h3 class="meDescription"  data-i18n="profession">Full Stack, Web Developer</h3>
+          <h3 class="meDescription"  data-i18n="profession">Full Stack, Desenvolvedor Web</h3>
           <a
             href="https://www.linkedin.com/in/guilherme-halter-nunes/"   
             class="icons"
@@ -101,7 +106,7 @@
         </div>
 
         <div  class="section4">
-          <h1 class="titleAbout" data-i18n="titleAbout">About.</h1>
+          <h1 class="titleAbout" data-i18n="titleAbout">Sobre.</h1>
           <p class="contAbout" data-i18n="textAboutMe">
             Sou um programador de 18 anos de Santa Catarina, Brasil. Em 2021,
             iniciei minha jornada no mundo da programação e desde então venho me
@@ -115,7 +120,7 @@
 
       <div id="skills" class="MySkills">
         <div class="section5">
-          <h1 class="skills" data-i18n="titleMySkill">My Skills.</h1>
+          <h1 class="skills" data-i18n="titleMySkill">Minhas Habilidades.</h1>
         </div>
 
         <div class="cardsSkills">
@@ -171,7 +176,7 @@
 
       <div   id="projects" class="Projects">
 
-        <h1 class="skills" data-i18n="titleProjects">Project's</h1>
+        <h1 class="skills" data-i18n="titleProjects">Projetos</h1>
         <div class="Cards">
           <a
             href="https://desafio-ponto-vendas-ozd38hbh5-guilherme-halter-nunes-projects.vercel.app/"
@@ -200,7 +205,7 @@
             class="cardGit"
           >
             <div class="up">
-              <span data-i18n="viewRepository">View repository on GitHub</span>
+              <span data-i18n="viewRepository">Exibir repositório no GitHub</span>
               <i class="devicon-github-original"></i>
             </div>
 
@@ -216,7 +221,7 @@
         <div class="Cards">
           <a href="https://github.com/GuilhermeHalter/Projeto_ControleTermicoSuinos" class="cardGithub">
             <div class="up">
-              <span data-i18n="viewRepository">View repository on GitHub</span>
+              <span data-i18n="viewRepository">Exibir repositório no GitHub</span>
               <i class="devicon-github-original"></i>
             </div>
 
@@ -258,7 +263,7 @@
 
         <a href="https://github.com/GuilhermeHalter/MuseuVelhoMundo-react" class="cardGit">
           <div class="up">
-            <span data-i18n="viewRepository">View repository on GitHub</span>
+            <span data-i18n="viewRepository">Exibir repositório no GitHub</span>
             <i class="devicon-github-original"></i>
           </div>
 
@@ -274,9 +279,9 @@
       </div>
 
       <div id="contact" class="Contact">
-        <h1 class="titleContact" data-i18n="titleContact">Contact.</h1>
+        <h1 class="titleContact" data-i18n="titleContact">Contato.</h1>
 
-        <h1 class="subTitleContact" data-i18n="sendEmail">Send me an email</h1>
+        <h1 class="subTitleContact" data-i18n="sendEmail">Envie-me um e-mail</h1>
         <form action="./assets/php/enviar.php" method="post">
           <div class="nameEmail">
             <label for="nome" data-i18n="name">Nome:</label>
@@ -296,7 +301,7 @@
               required
             ></textarea>
 
-            <input type="submit" value="Enviar" />
+            <input  type="submit" value="Enviar" />
           </div>
         </form>
       </div>
@@ -307,11 +312,9 @@
         <span class="close">&times;</span>
         <h2 class="cardTitle"></h2>
         <p id="modalSkillName"></p>
-        <!-- Adicionando o elemento modalSkillName aqui -->
 
         <div class="gridContainer">
           <div class="gridIcons">
-            <!-- Aqui serão inseridos os ícones dos skills específicos -->
           </div>
           <div class="gridName"></div>
         </div>
@@ -320,11 +323,11 @@
 
     <footer>
             <div class="col-md-5">
-              <h3 data-i18n="contactUs">Contact Us</h3>
+              <h3 data-i18n="contactUs">Contato</h3>
               <p>halter.guilhermenunes@gmail.com</p>
             </div>
             <div class="col-md-6">
-              <h3 data-i18n="followUs">Follow Us</h3>
+              <h3 data-i18n="followUs">Me siga em</h3>
               <ul class="social-media">
                 <li><a href="https://www.instagram.com/guilhermehalter/"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/guilherme-halter-nunes/"><i class="fa-brands fa-linkedin-in"></i></a></li>
@@ -336,5 +339,6 @@
     <script src="./assets/javaScript/theme.js"></script>
     <script src="./assets/javaScript/modal.js"></script>
     <script src="./assets/javaScript/scroll.js"></script>
+    <script src="./assets/javaScript/translate.js"></script>
   </body>
 </html>
