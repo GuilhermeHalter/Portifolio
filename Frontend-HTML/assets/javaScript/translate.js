@@ -25,7 +25,8 @@ const resources = {
         "email": "Endereço de Email:",
         "message": "Mensagem:",
         "contactUs": "Contato",
-        "followUs": "Me siga em"
+        "followUs": "Me siga em",
+        "outras": "Outros"
       }
     },
     "en": {
@@ -54,7 +55,8 @@ const resources = {
         "email": "Email Address:",
         "message": "Message:",
         "contactUs": "Contact",
-        "followUs": "Follow me on"
+        "followUs": "Follow me on",
+        "outras": "Other"
       }
     }
   };
