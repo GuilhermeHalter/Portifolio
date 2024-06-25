@@ -298,93 +298,6 @@ li {
   color: #61AB41;
 }
 
-.cardTitle {
-  width: 100%;
-  font-size: 20px;
-  font-weight: bold;
-  margin-left: 5%;
-}
-
-.cardsSkills {
-  display: grid;
-  margin-left: 5%;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-}
-
-.card {
-  width: 80%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border: 3px solid #61AB41;
-  border-radius: 10px;
-  margin-bottom: 10%;
-}
-
-.card:hover {
-  cursor: pointer;
-  transition: 0.5s;
-  transform: scale(1.1);
-}
-
-.Cards {
-  display: flex;
-  margin-bottom: 2%;
-}
-
-.cardProj {
-  display: flex;
-  width: 60%;
-  padding: 1%;
-  height: 250px;
-  margin-left: 5%;
-  border: 3px solid #61AB41;
-  border-radius: 10px;
-}
-
-.cardGit {
-  width: 25%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-left: 2%;
-  text-decoration: none;
-  color: #000000;
-  border: 3px solid #61AB41;
-  border-radius: 10px;
-}
-
-.cardGit:hover {
-  cursor: pointer;
-  transition: 0.5s;
-  transform: scale(1.05);
-}
-
-.cardProjet {
-  display: flex;
-  width: 60%;
-  padding: 1%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 250px;
-  margin-left: 2%;
-  border: 3px solid #61AB41;
-  border-radius: 10px;
-}
-
-.cardGithub {
-  width: 25%;
-  margin-left: 5%;
-  text-decoration: none;
-  color: #000000;
-  border: 3px solid #61AB41;
-  border-radius: 10px;
-}
-
-.cardGithub:hover {
-  cursor: pointer;
-  transition: 0.5s;
-  transform: scale(1.05);
-}
-
 .viewProject {
   width: 40%;
   font-size: 10px;
@@ -485,12 +398,7 @@ input[type="submit"]:hover {
   border-radius: 2%;
 }
 
-.cardDescription {
-  color: #454545;
-  margin-left: 5%;
-  width: 100%;
-  font-size: 15px;
-}
+
 
 .gridIcons {
   display: grid;
@@ -537,11 +445,7 @@ input[type="submit"]:hover {
   color: #61AB41;
 }
 
-.card i {
-  font-size: 30px;
-  margin-bottom: 25px;
-  color: #61AB41;
-}
+
 
 .modal {
   display: none;
@@ -695,5 +599,125 @@ input[type="submit"]:hover {
   }
   100% {
     opacity: 1;
+  }
+}
+
+
+/* 
+                                 <---------------- Tablet ---------------->
+*/
+
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+
+  .sections {
+    display: inline-flex;
+    width: 100%;
+    height: 548px;
+    justify-content: space-between;
+  }
+
+  .section1 {
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+
+  .section2 {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+  }
+
+  .section4 {
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+
+  .background {
+    display: flex;
+    transform: scaleX(-1);
+  }
+
+  .titleAbout {
+    color: #61AB41;
+    margin-left: 30%;
+    margin-right: 5%;
+    margin-bottom: 0;
+  }
+
+  .contAbout {
+    margin-left: 30%;
+    margin-right: 10%;
+  }
+
+  #themeToggle:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+
+  .section3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .perfil {
+    position: absolute;
+    width: 300px;
+    border: 7px solid #61AB41;
+    border-radius: 50%;
+  }
+
+  .skills {
+    margin-left: 10%;
+    color: #61AB41;
+  }
+
+  .viewProject {
+    width: 40%;
+    font-size: 10px;
+  }
+
+  .Contact {
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  /* Estilo para o formulário */
+  form {
+    display: flex;
+  }
+
+  .titleContact {
+    color: #61AB41;
+  }
+
+  .nameEmail {
+    width: 100%;
+  }
+
+  .message {
+    width: 100%;
+    display: block;
+  }
+
+  /* Estilo para os rótulos */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  /* Estilo para os campos de entrada */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
   }
 }

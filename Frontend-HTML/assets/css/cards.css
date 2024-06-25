@@ -1,0 +1,99 @@
+.cardTitle {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5%;
+  }
+  
+  .cardsSkills {
+    display: grid;
+    margin-left: 5%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+  
+  .card {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 3px solid #61AB41;
+    border-radius: 10px;
+    margin-bottom: 10%;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+  
+  .Cards {
+    display: flex;
+    margin-bottom: 2%;
+  }
+  
+  .cardProj {
+    display: flex;
+    width: 60%;
+    padding: 1%;
+    height: 250px;
+    margin-left: 5%;
+    border: 3px solid #61AB41;
+    border-radius: 10px;
+  }
+  
+  .cardGit {
+    width: 25%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 2%;
+    text-decoration: none;
+    color: #000000;
+    border: 3px solid #61AB41;
+    border-radius: 10px;
+  }
+  
+  .cardGit:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.05);
+  }
+  
+  .cardProjet {
+    display: flex;
+    width: 60%;
+    padding: 1%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 250px;
+    margin-left: 2%;
+    border: 3px solid #61AB41;
+    border-radius: 10px;
+  }
+  
+  .cardGithub {
+    width: 25%;
+    margin-left: 5%;
+    text-decoration: none;
+    color: #000000;
+    border: 3px solid #61AB41;
+    border-radius: 10px;
+  }
+  
+  .cardGithub:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.05);
+  }
+
+  .cardDescription {
+    color: #454545;
+    margin-left: 5%;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .card i {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #61AB41;
+  }

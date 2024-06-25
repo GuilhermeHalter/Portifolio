@@ -1,0 +1,602 @@
+
+/* 
+  <---------------- Mobile ---------------->
+*/
+
+@media only screen and (max-width: 541px) {
+  
+    header {
+     height: auto;
+     flex-direction: column;
+     align-items: flex-start;
+    }
+  
+    .logo {
+     width: 30%;
+     margin: 5% 0 2% 5%;
+    }
+  
+    ul {
+     margin: 0;
+     padding: 0;
+    }
+  
+    li {
+     margin: 0;
+     padding: 0;
+    }
+  
+    .navLink {
+     display: block;
+     padding: 2% 0;
+     margin: 0;
+     text-align: center;
+    }
+  
+    footer {
+     display: grid;
+     grid-template-columns: 50% 50%;
+     font-size: 10px;
+     height: 80px;
+    }
+  
+    .col-md-5 {
+     margin-left: 5%;
+    }
+  
+    select {
+     width: 100%;
+     padding: 2px;
+     background-color: transparent;
+     border-radius: 5px;
+     border: 2px solid #61AB41;
+    }
+  
+    .social-media {
+     width: 40%;
+     margin-left: -15px;
+     padding: 0;
+    }
+  
+    .social-media i {
+     color: #c3c3c3;
+    }
+  
+    ul {
+     margin: 0;
+     margin-right: 10px;
+    }
+  
+    li {
+     display: inline-block;
+     list-style-type: none;
+     margin-left: 15px;
+     font-size: 14px;
+     font-family: "Kodchasan", sans-serif;
+     font-weight: 600;
+     font-style: normal;
+     color: #404040;
+    }
+  
+    .navLink {
+     color: #404040;
+     position: relative;
+     text-decoration: none;
+     transition: color 1s;
+    }
+  
+    .navLink:hover {
+     color: #61AB41;
+    }
+  
+    .navLink::before {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 4px;
+     border-radius: 4px;
+     background-color: #5ab334;
+     bottom: -3px;
+     left: 0;
+     transform-origin: right;
+     transform: scaleX(0);
+     transition: transform .3s ease-in-out, background-color 1s;
+    }
+  
+    .navLink:hover::before {
+     transform-origin: left;
+     transform: scaleX(1);
+    }
+  
+    .logo {
+     width: 40px;
+     margin-left: 2%;
+    }
+  
+    .logo:hover {
+     cursor: pointer;
+    }
+  
+    .homeSubtitle {
+     margin-bottom: 7px;
+     color: #61AB41;
+     line-height: 1;
+     backdrop-filter: blur(10px);
+     font-size: 20px;
+     opacity: 0;
+     transform: translateX(-60px);
+     animation: slideIn 1.3s forwards;
+    }
+  
+    .myName {
+     margin-top: 0;
+     margin-bottom: 0;
+     font-size: 30px;
+     font-family: "Krona One", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     opacity: 0;
+     transform: translateX(-60px);
+     animation: slideName 1.1s forwards;
+     animation-delay: 1.3s;
+    }
+  
+    .meDescription {
+     opacity: 0;
+     transform: translateX(-60px);
+     font-size: 20px;
+     animation: slideName 1.1s forwards;
+     animation-delay: 2.4s;
+    }
+  
+    .icons {
+     color: #61AB41;
+     font-size: 30px;
+     margin-right: 20px;
+    }
+  
+    .icons:hover {
+     color: #1b2c13;
+    }
+  
+    .iconsContact {
+     display: flex;
+     align-items: center;
+     width: 45%;
+     text-decoration: none;
+     font-size: 16px;
+    }
+  
+    .iconsContact i {
+     color: #61AB41;
+     margin-right: 10px;
+    }
+  
+    .iconsContact p {
+     color: #163014;
+    }
+  
+    .sections {
+     display: inline-flex;
+     width: 100%;
+     height: auto;
+     justify-content: space-between;
+     flex-direction: column;
+    }
+  
+    .About {
+     display: inline-flex;
+     width: 100%;
+     height: auto;
+     justify-content: space-between;
+     flex-direction: column;
+    }
+  
+    .section1 {
+     width: 100%;
+     margin-top: 30%;
+     margin-left: 5%;
+    }
+  
+    .section2 {
+     display: flex;
+     width: 100%;
+     justify-content: end;
+    }
+  
+    .section4 {
+     width: 100%;
+     margin-top: 10%;
+    }
+  
+    .background {
+     display: flex;
+     transform: scaleX(-1);
+    }
+  
+    .titleAbout {
+     color: #61AB41;
+     margin-left: 10%;
+     margin-right: 5%;
+     margin-bottom: 0;
+    }
+  
+    .contAbout {
+     margin-left: 10%;
+     margin-right: 5%;
+    }
+  
+    .section3 {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+    }
+  
+    .perfil {
+     position: absolute;
+     width: 300px;
+     border: 5px solid #61AB41;
+     border-radius: 50%;
+    }
+  
+    .skills {
+     margin-left: 5%;
+     color: #61AB41;
+    }
+  
+    .viewProject {
+     width: 60%;
+     font-size: 8px;
+    }
+  
+    .Contact {
+     margin-top: 10%;
+     margin-left: 5%;
+    }
+  
+    /* Estilo para o formulário */
+    form {
+     display: flex;
+     flex-direction: column;
+    }
+  
+    .titleContact {
+     color: #61AB41;
+    }
+  
+    .nameEmail {
+     width: 100%;
+    }
+  
+    .message {
+     width: 100%;
+     display: block;
+    }
+
+    .cardsSkills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .cardGit{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .cardGithub{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    .cardTitle{
+        font-size: 17px;
+    }
+    .cardDescription{
+        font-size: 12px;
+        padding-right: 30px;
+    }
+  
+    /* Estilo para os rótulos */
+    label {
+     display: block;
+     margin-bottom: 5px;
+    }
+  
+    /* Estilo para os campos de entrada */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+     width: 90%;
+     margin-bottom: 10px;
+     padding: 8px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     box-sizing: border-box;
+    }
+  
+    /* Estilo para o campo de mensagem */
+    textarea {
+     width: 90%;
+     height: 100px;
+    }
+  
+    /* Estilo para o botão de envio */
+    input[type="submit"] {
+     padding: 10px 20px;
+     margin-bottom: 20px;
+     color: #4CAF50;
+     font-weight: bold;
+     border: 2px solid #4CAF50;
+     border-radius: 100px;
+     cursor: pointer;
+    }
+  
+    /* Estilo para o botão de envio quando o cursor está sobre ele */
+    input[type="submit"]:hover {
+     transition: 0.5s;
+     background-color: #4CAF50;
+     color: white;
+    }
+  
+    .linkSite {
+     display: block;
+     text-decoration: none;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     color: #000000;
+     width: 90%;
+     height: 300px;
+     padding: 1%;
+     margin-left: 3%;
+     border: 3px solid #61AB41;
+     border-radius: 10px;
+    }
+  
+    .linkSite:hover {
+     cursor: pointer;
+     transition: 0.5s;
+     transform: scale(1.05);
+    }
+
+    .cardProjet{
+        display: block;
+        text-decoration: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #000000;
+        width: 90%;
+        height: 300px;
+        padding: 1%;
+        margin-left: 3%;
+        border: 3px solid #61AB41;
+        border-radius: 10px;
+    }
+  
+    .imgProject {
+     width: 100%;
+     height: 150px;
+     border-radius: 2%;
+    }
+  
+    .imgProjectA {
+     width: 100%;
+     border-radius: 2%;
+    }
+  
+    .gridIcons {
+     display: grid;
+     grid-template-columns: 33.3% 33.3% 33.3%;
+     text-align: center;
+    }
+  
+
+    .up {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 3%;
+     margin-left: 3%;
+     margin-right: 3%;
+     margin-bottom: 10%;
+     flex-direction: column;
+    }
+  
+    .linkApi {
+     color: #007446;
+    }
+  
+    .up i {
+     font-size: 30px;
+     color: #61AB41;
+    }
+  
+    .down {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 3%;
+     margin-left: 3%;
+     margin-right: 3%;
+     margin-bottom: 10%;
+    }
+  
+    .down i {
+     font-size: 27px;
+     margin-top: 5%;
+     margin-right: 5%;
+     color: #61AB41;
+    }
+  
+    .modal {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgba(0, 0, 0, 0.4);
+    }
+  
+    .modal-content {
+     background-color: #fefefe;
+     margin: 50% auto;
+     padding: 20px;
+     border: 3px solid #61AB41;
+     width: 80%;
+    }
+  
+    .modal-content .gridIcons {
+     display: flex;
+     width: 15%;
+     color: #61AB41;
+     margin-bottom: 15px;
+     font-size: 30px;
+     flex-direction: column;
+     align-items: flex-start;
+    }
+  
+    .modal-content .gridContainer {
+     display: flex;
+    }
+  
+    .modal-content .gridIcons i {
+     margin-bottom: 5px;
+    }
+  
+    .modal-content .gridName {
+     width: 80%;
+     color: #61AB41;
+    }
+  
+    .modal-content .gridName span {
+     display: flex;
+     width: 80%;
+     color: #61AB41;
+     margin-bottom: 16px;
+     flex-direction: column;
+     align-items: flex-start;
+    }
+  
+    .close {
+     color: #aaa;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+    }
+  
+    .close:hover,
+    .close:focus {
+     color: black;
+     text-decoration: none;
+     cursor: pointer;
+    }
+  
+    #mouse-scroll {
+     display: block;
+     width: 10%;
+     margin-left: 30%;
+     margin-top: 20%;
+     left: 75%;
+     top: 80px;
+     z-index: 999;
+    }
+  
+    #mouse-scroll span {
+     display: block;
+     width: 5px;
+     height: 5px;
+     transform: rotate(45deg);
+     border-right: 2px solid #61AB41;
+     border-bottom: 2px solid #61AB41;
+     margin: 0 0 3px 5px;
+    }
+  
+    #mouse-scroll .mouse {
+     height: 21px;
+     width: 14px;
+     border-radius: 10px;
+     border: 2px solid #61AB41;
+     top: 170px;
+    }
+  
+    #mouse-scroll .down-arrow-1 {
+     margin-top: 6px;
+    }
+  
+    #mouse-scroll .down-arrow-1,
+    #mouse-scroll .down-arrow-2,
+    #mouse-scroll .down-arrow-3 {
+     animation: mouse-scroll 1s infinite;
+    }
+  
+    #mouse-scroll .down-arrow-1 {
+     animation-delay: .1s;
+     animation-direction: alternate;
+    }
+  
+    #mouse-scroll .down-arrow-2 {
+     animation-delay: .2s;
+     animation-direction: alternate;
+    }
+  
+    #mouse-scroll .down-arrow-3 {
+     animation-delay: .3s;
+     animation-direction: alternate;
+    }
+  
+    #mouse-scroll .mouse-in {
+     height: 5px;
+     width: 2px;
+     display: block;
+     margin: 5px auto;
+     background: #61AB41;
+     position: relative;
+    }
+  
+    #mouse-scroll .mouse-in {
+     animation: animated-mouse 1.2s ease infinite;
+    }
+  
+    @keyframes animated-mouse {
+     0% {
+      opacity: 1;
+      transform: translateY(0);
+     }
+     100% {
+      opacity: 0;
+      transform: translateY(6px);
+     }
+    }
+  
+    @keyframes mouse-scroll {
+     0% {
+      opacity: 0;
+     }
+     50% {
+      opacity: 0.5;
+     }
+     100% {
+      opacity: 1;
+     }
+    }
+  }
