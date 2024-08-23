@@ -1,0 +1,54 @@
+/* 
+                        <---------------- Mobile ---------------->
+*/
+
+@media only screen
+and (max-width: 541px)
+{
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding:20px 10px 20px 0;
+      transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+      z-index: 1000;
+      backdrop-filter: blur(0px); 
+    }
+    
+    .header--scrolled {
+      background-color: rgba(131, 131, 131, 0.2); 
+      backdrop-filter: blur(10px);
+    }
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    nav h1 {
+      color: white;
+      margin: 0;
+    }
+
+    nav a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    nav a:hover{
+        transition: 1s;
+        color: rgb(41, 79, 182);
+        text-decoration: underline;
+    }
+
+}
+  
+
+/* 
+                        <---------------- Tablet ---------------->
+*/
+
+/* 
+                        <---------------- Computador ---------------->
+*/

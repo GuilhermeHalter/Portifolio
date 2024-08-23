@@ -1,12 +1,19 @@
-import './App.css'
+import React from "react";
+import { Outlet } from "react-router-dom";
+
+import HeaderComp from "./components/HeaderComp";
+
+import './App.css';
 
 function App() {
-
   return (
     <>
-      <h1>Ola mundo</h1>
+      <HeaderComp />
+      <div style={{ marginTop: "100px" }}>
+        <Outlet />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
