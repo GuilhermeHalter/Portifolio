@@ -3,9 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../styles/Components/ProjectsComp.css';
-
 import { IoIosExit } from "react-icons/io";
-
 
 const projects = [
     {
@@ -20,6 +18,7 @@ const projects = [
         title: 'Controle de Conforto Térmico em Creche de Suínos',
         description: 'Desenvolvi esse projeto no TCC do meu curso técnico em Informática, com o objetivo de controlar o conforto térmico na creche dos suínos, utilizando sensores de temperatura e umidade.',
         github: 'https://github.com/GuilhermeHalter/Projeto_ControleTermicoSuinos',
+        site: '' // Este projeto não tem site
     },
     {
         img: 'https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2FprintMuseu.jpeg?alt=media&token=17beef85-cb23-4957-b9be-9448a1f78ab5',
@@ -44,8 +43,12 @@ const ProjectsComp = () => {
 
     const openModals = (project) => {
         setCurrentProject(project);
+
+        if (project.site) {
+            setSiteModalOpen(true);
+        }
+        
         setGithubModalOpen(true);
-        setSiteModalOpen(true);
     };
 
     const closeModals = () => {
@@ -96,14 +99,15 @@ const ProjectsComp = () => {
                     <div className="modal-content">
                         <h2>Ir para o GitHub</h2>
                         <p>Deseja visitar o repositório no GitHub?</p>
-                        <button onClick={() => window.open(currentProject.github, "_blank")}>Visitar </button>
+                        <button onClick={() => window.open(currentProject.github, "_blank")}>Visitar</button>
                     </div>
                 </div>
             )}
 
             {(isGithubModalOpen || isSiteModalOpen) && (
-                <button className="close-modals-button" onClick={closeModals}>Sair <IoIosExit className='iconExit'/>
-</button>
+                <button className="close-modals-button" onClick={closeModals}>
+                    Sair <IoIosExit className='iconExit'/>
+                </button>
             )}
         </div>
     );

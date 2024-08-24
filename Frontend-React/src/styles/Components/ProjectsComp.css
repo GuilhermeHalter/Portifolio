@@ -77,12 +77,12 @@
 
 /* Modal do site (no topo) */
 .modal-site {
-    top: 15%;
+    top: 57%;
 }
 
 /* Modal do GitHub (na parte inferior) */
 .modal-github {
-    top: 53%;
+    top: 15%;
 }
 
 /* Conteúdo do modal */
