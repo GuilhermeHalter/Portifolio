@@ -20,6 +20,11 @@ const projects = [
         title: 'Museu do Velho Mundo',
         description: 'O Museu do Velho Mundo é um projeto que criei para simular um museu virtual, onde você pode visualizar obras de arte e esculturas de diversos artistas renomados.',
     },
+    {
+        img: 'https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2FSolve4u.png?alt=media&token=a977aeb9-0998-45c3-97f3-4d9902522dc6',
+        title: 'Solve4u',
+        description: 'O Solve4u é uma plataforma online desenvolvida para agilizar a gestão de projetos, proporcionando uma abordagem organizada e eficiente para coordenar tarefas e membros da equipa.',
+    },
 ];
 
 const ProjectsComp = () => {
