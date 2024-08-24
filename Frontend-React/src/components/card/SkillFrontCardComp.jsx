@@ -24,13 +24,13 @@ const SkillFrontCard = () => {
             <div className={`card-body ${isOpen ? 'open' : ''}`}>
                 {isOpen && (
                     <div>
-                        <FaHtml5 style={{ color: '#E44D26'}} />
-                        <FaCss3 style={{ color: '#1572B6' }} />
-                        <FaBootstrap style={{ color: '#563D7C' }} />
-                        <FaVuejs style={{ color: '#1DB77A', marginTop: "20px"  }} />
-                        <FaReact style={{ color: '#61DAFB', marginTop: "20px"  }} />
-                        <TbBrandReactNative style={{ color: '#61DAFB', marginTop: "20px"  }} />
-                        <SiVite style={{ color: '#646CFF', marginTop: "20px"  }} />                    
+                        <FaHtml5 title='HTML5' style={{ color: '#E44D26'}} />
+                        <FaCss3 title='CSS' style={{ color: '#1572B6' }} />
+                        <FaBootstrap title='Bootstrap' style={{ color: '#563D7C' }} />
+                        <FaVuejs title='Vue.js' style={{ color: '#1DB77A', marginTop: "20px"  }} />
+                        <FaReact title='React' style={{ color: '#61DAFB', marginTop: "20px"  }} />
+                        <TbBrandReactNative title='React Native' style={{ color: '#61DAFB', marginTop: "20px"  }} />
+                        <SiVite title='Vite.js' style={{ color: '#646CFF', marginTop: "20px"  }} />                    
                     </div>
                 )}
             </div>

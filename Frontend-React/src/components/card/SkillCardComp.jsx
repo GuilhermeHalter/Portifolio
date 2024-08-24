@@ -25,12 +25,12 @@ const SkillCard = () => {
             <div className={`card-body ${isOpen ? 'open' : ''}`}>
                 {isOpen && (
                     <div>
-                        <IoLogoJavascript style={{ color: '#F7DF1E' }} />
-                        <FaPython style={{ color: '#3776AB' }} />
-                        <FaJava style={{ color: '#007396' }} />
-                        <SiCplusplus style={{ color: '#00599C', marginTop: "20px" }} />
-                        <SiCsharp style={{ color: '#239120', marginTop: "20px" }} />
-                        <SiPhp style={{ color: '#777BB4', marginTop: "20px" }} />
+                        <IoLogoJavascript title='JavaScript' style={{ color: '#F7DF1E' }} />
+                        <FaPython title='Python' style={{ color: '#3776AB' }} />
+                        <FaJava title='Java' style={{ color: '#007396' }} />
+                        <SiCplusplus title='C plus plus' style={{ color: '#00599C', marginTop: "20px" }} />
+                        <SiCsharp title='C sharp' style={{ color: '#239120', marginTop: "20px" }} />
+                        <SiPhp title='PHP' style={{ color: '#777BB4', marginTop: "20px" }} />
                     </div>
                 )}
             </div>

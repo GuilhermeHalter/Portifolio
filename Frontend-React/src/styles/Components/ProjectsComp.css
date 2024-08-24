@@ -1,0 +1,46 @@
+/* 
+   <---------------- Mobile ---------------->
+*/
+
+/* Estilos específicos para telas com largura máxima de 320px */
+@media only screen and (max-width: 320px) {
+
+    .carousel {
+        margin-top: 10px;
+    }
+
+    .project-card {
+        padding: 15px;
+        background-color: #fffefe;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .project-card p {
+        font-size: 14px;
+        color: #333;
+    }
+
+    .project-card img {
+        width: 90%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    /* Ajuste do tamanho das setas de navegação */
+    .slick-prev, .slick-next {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Ocultar os pontos de navegação (dots) */
+    .slick-dots {
+        display: none;
+    }
+}

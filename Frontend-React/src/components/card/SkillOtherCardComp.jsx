@@ -24,13 +24,13 @@ const SkillOtherCard = () => {
             <div className={`card-body ${isOpen ? 'open' : ''}`}>
                 {isOpen && (
                     <div>
-                        <FaGitAlt style={{ color: '#F05032' }} />
-                        <FaGithub style={{ color: '#181717' }} />
-                        <FaNpm style={{ color: '#CB3837' }} />
-                        <FaMarkdown style={{ color: '#000000', marginTop: "20px" }} />
-                        <FaNode style={{ color: '#68A063', marginTop: "20px" }} />
-                        <SiVisualstudiocode style={{ color: '#007ACC', marginTop: "20px" }} />
-                        <SiArduino style={{ color: '#00979D', marginTop: "20px" }} />
+                        <FaGitAlt title='Git' style={{ color: '#F05032' }} />
+                        <FaGithub title='Github' style={{ color: '#181717' }} />
+                        <FaNpm title='NPM' style={{ color: '#CB3837' }} />
+                        <FaMarkdown title='Markdown' style={{ color: '#000000', marginTop: "20px" }} />
+                        <FaNode title='Node' style={{ color: '#68A063', marginTop: "20px" }} />
+                        <SiVisualstudiocode title='VsCode' style={{ color: '#007ACC', marginTop: "20px" }} />
+                        <SiArduino title='Arduido IDEA' style={{ color: '#00979D', marginTop: "20px" }} />
                     </div>
                 )}
             </div>

@@ -3,6 +3,7 @@ import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 
 import AboutComp from "../components/AboutComp";
+import ProjectsComp from "../components/ProjectsComp";
 
 import "../styles/Screens/HomeScreen.css";
 
@@ -62,6 +63,8 @@ const HomeScreen = () => {
       </div>
     </div>
         <AboutComp/>
+
+        <ProjectsComp/>
     </>
     
   );

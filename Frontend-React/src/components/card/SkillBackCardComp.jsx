@@ -20,10 +20,10 @@ const SkillBackCard = () => {
             <div className={`card-body ${isOpen ? 'open' : ''}`}>
                 {isOpen && (
                     <div>
-                        <SiPostgresql style={{ color: '#336791' }} />
-                        <SiMysql style={{ color: '#4479A1' }} />
-                        <SiMicrosoftsqlserver style={{ color: '#CC2927'  }} />
-                        <SiDjango style={{ color: '#092E20', marginTop: "30px"  }} />
+                        <SiPostgresql title='PostgreSQL' style={{ color: '#336791' }} />
+                        <SiMysql title='MySQL' style={{ color: '#4479A1' }} />
+                        <SiMicrosoftsqlserver title='SLQ Server' style={{ color: '#CC2927'  }} />
+                        <SiDjango title='Django' style={{ color: '#092E20', marginTop: "30px"  }} />
                     </div>
                 )}
             </div>
