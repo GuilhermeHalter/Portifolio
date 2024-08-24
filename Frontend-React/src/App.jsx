@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <HeaderComp />
-      <div style={{ marginTop: "100px" }}>
+      <div style={{ marginTop: "10px" }}>
         <Outlet />
       </div>
     </>

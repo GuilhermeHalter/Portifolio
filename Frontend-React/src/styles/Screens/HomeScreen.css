@@ -1,0 +1,197 @@
+/* 
+                        <---------------- Mobile ---------------->
+*/
+
+@media only screen and (max-width: 320px) {
+  .Container {
+    position: relative;
+    top: 80px;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }	
+
+  .perfil {
+    width: 200px;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .title {
+    margin: 0;
+    margin-top: 30px;
+    color: #41abab;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .function {
+    margin: 0;
+    color: rgb(75, 75, 75);
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .myName {
+    margin: 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons a {
+    font-size: 25px;
+    margin-right: 13px;
+    color: #41abab;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .poligonal-container {
+    width: 210px;
+    height: 210px;
+    clip-path: polygon(
+      30% 0%,  
+      70% 0%,   
+      100% 25%,  
+      100% 75%,  
+      70% 100%,  
+      30% 100%,  
+      0% 75%,    
+      0% 25%,    
+      30% 0%     
+    );
+    background-color: #41abab; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .poligonal-image {
+    width: 200px;
+    height: 200px;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2Fperfil.png?alt=media&token=a2c65334-f791-45e2-9647-48ecdc3e9a2a");
+    background-size: cover;
+    clip-path: polygon(
+      30% 0%,    
+      70% 0%,    
+      100% 25%,  
+      100% 75%,  
+      70% 100%,  
+      30% 100%,  
+      0% 75%,    
+      0% 25%,    
+      30% 0%     
+    );
+    
+  }
+
+  /*css mouse*/
+
+  #mouse-scroll {
+    display: block;
+    width: 10%;
+    margin-left: 45%;
+    margin-top: 20%;
+    left: 75%;
+    top: 80px;
+    z-index: 999;
+  }
+
+  #mouse-scroll span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    border-right: 2px solid #41abab;
+    border-bottom: 2px solid #41abab;
+    margin: 0 0 3px 5px;
+  }
+
+  #mouse-scroll .mouse {
+    height: 21px;
+    width: 14px;
+    border-radius: 10px;
+    border: 2px solid #41abab;
+    top: 170px;
+  }
+
+  #mouse-scroll .down-arrow-1 {
+    margin-top: 6px;
+  }
+
+  #mouse-scroll .down-arrow-1,
+  #mouse-scroll .down-arrow-2,
+  #mouse-scroll .down-arrow-3 {
+    animation: mouse-scroll 1s infinite;
+  }
+
+  #mouse-scroll .down-arrow-1 {
+    animation-delay: 0.1s;
+    animation-direction: alternate;
+  }
+
+  #mouse-scroll .down-arrow-2 {
+    animation-delay: 0.2s;
+    animation-direction: alternate;
+  }
+
+  #mouse-scroll .down-arrow-3 {
+    animation-delay: 0.3s;
+    animation-direction: alternate;
+  }
+
+  #mouse-scroll .mouse-in {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: #41abab;
+    position: relative;
+  }
+
+  #mouse-scroll .mouse-in {
+    animation: animated-mouse 1.2s ease infinite;
+  }
+
+  @keyframes animated-mouse {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+  }
+
+  @keyframes mouse-scroll {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+/* 
+                        <---------------- Tablet ---------------->
+*/
+
+/* 
+                        <---------------- Computador ---------------->
+*/
