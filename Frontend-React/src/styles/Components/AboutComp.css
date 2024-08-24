@@ -1,0 +1,26 @@
+/* 
+                        <---------------- Mobile ---------------->
+*/
+
+@media only screen and (max-width: 320px) {
+
+.titleAbout{
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.textAbout{
+    margin-left: 10%;
+    width: 75%;
+}
+
+}
+
+
+/* 
+                        <---------------- Tablet ---------------->
+*/
+
+/* 
+                        <---------------- Computador ---------------->
+*/

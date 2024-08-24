@@ -1,0 +1,56 @@
+.skill-card {
+    width: 300px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card-header {
+    background: #41abab;
+    height: 30px;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body {
+    padding: 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.card-body.open{
+
+    padding: 10px;
+    padding-bottom: 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.card-body.open div{
+    display: grid;
+    margin-left: 10%;
+    grid-template-columns: 93.3px 93.3px 93.3px ;
+    font-size: 35px;
+}
+
+.skill-card.open .card-body {
+    max-height: 200px; 
+}
+
+.skill-card.open {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+
+
