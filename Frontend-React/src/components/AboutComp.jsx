@@ -11,16 +11,18 @@ const AboutComp = () => {
     <div className="Container">
       <h1 className="titleAbout">About</h1>
       <p className="textAbout">
-        Sou um programador de 18 anos de Santa Catarina, Brasil. Em 2021,
-        iniciei minha jornada no mundo da programação e desde então venho me
-        aprofundando cada vez mais nesse universo fascinante.
+        I am an 18-year-old programmer from Santa Catarina, Brazil. In 2021, I
+        started my journey in the programming world and have been delving deeper
+        into this fascinating universe ever since. Currently, I dedicate myself
+        to web development, both front-end and back-end, and I am always looking
+        for new challenges and opportunities to learn and grow.
       </p>
 
       <h2 className="titleAbout">My Skills</h2>
-      <SkillFrontCard/>
-      <SkillBackCard/>
-      <SkillCard/>
-      <SkillOtherCard/>
+      <SkillFrontCard />
+      <SkillBackCard />
+      <SkillCard />
+      <SkillOtherCard />
     </div>
   );
 };

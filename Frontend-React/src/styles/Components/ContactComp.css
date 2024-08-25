@@ -1,0 +1,29 @@
+/* 
+                        <---------------- Mobile ---------------->
+*/
+
+@media only screen
+and (max-width: 541px)
+{
+    .subTitle{
+        margin-left: 10%;
+    }
+
+    .Email{
+        display: flex;
+        align-items: center;
+        color: #41abab;
+        text-decoration: none;
+        margin-left: 10%;
+    }
+
+    .emailIcon{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .Email:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}

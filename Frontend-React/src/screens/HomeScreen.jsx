@@ -4,6 +4,7 @@ import { IoIosMail } from "react-icons/io";
 
 import AboutComp from "../components/AboutComp";
 import ProjectsComp from "../components/ProjectsComp";
+import ContactComp from "../components/ContactComp";
 
 import "../styles/Screens/HomeScreen.css";
 
@@ -65,6 +66,8 @@ const HomeScreen = () => {
         <AboutComp/>
 
         <ProjectsComp/>
+        
+        <ContactComp/>
     </>
     
   );
