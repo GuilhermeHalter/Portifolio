@@ -14,10 +14,6 @@ and (max-width: 541px)
       z-index: 100;
       backdrop-filter: blur(0px); 
     }
-    
-    .nav-links{
-      margin-left: 5%;
-    }
 
     .header--scrolled {
       background-color: rgba(131, 131, 131, 0.2); 
@@ -25,7 +21,7 @@ and (max-width: 541px)
     }
     nav{
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
     }
     
@@ -45,6 +41,18 @@ and (max-width: 541px)
         transition: 1s;
         color: rgb(41, 79, 182);
         text-decoration: underline;
+    }
+
+    .theme-toggle-button {
+      background: none;
+      border: none;
+      color: inherit;
+      cursor: pointer;
+    }
+    
+
+    .link.dark-mode{
+      color: beige;
     }
 
 }
