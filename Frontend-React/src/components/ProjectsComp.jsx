@@ -68,8 +68,8 @@ const ProjectsComp = () => {
     };
 
     return (
-        <div className="Container">
-            <h1 className="titleAbout">Projetos</h1>
+        <div className="Container" id='projects'>
+            <h1 className="titleAbout">Projects</h1>
             <Slider {...settings} className="carousel">
                 {projects.map((project, index) => (
                     <div key={index} className="project-card" onClick={() => openModals(project)}>

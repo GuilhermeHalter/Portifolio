@@ -8,7 +8,7 @@ import SkillOtherCard from "./card/SkillOtherCardComp";
 
 const AboutComp = () => {
   return (
-    <div className="Container">
+    <div className="Container" id="about">
       <h1 className="titleAbout">About</h1>
       <p className="textAbout">
         I am an 18-year-old programmer from Santa Catarina, Brazil. In 2021, I
@@ -18,7 +18,7 @@ const AboutComp = () => {
         for new challenges and opportunities to learn and grow.
       </p>
 
-      <h2 className="titleAbout">My Skills</h2>
+      <h2 className="titleAbout" id="skills">My Skills</h2>
       <SkillFrontCard />
       <SkillBackCard />
       <SkillCard />
