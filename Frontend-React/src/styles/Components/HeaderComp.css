@@ -3,12 +3,12 @@
 */
 
 @media only screen
-and (max-width: 541px)
+and (max-width: 320px)
 {
     .header {
       position: fixed;
       top: 0;
-      width: 96.798%;
+      width: 100%;
       padding:20px 10px 20px 0;
       transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
       z-index: 100;
@@ -61,6 +61,8 @@ and (max-width: 541px)
 /* 
                         <---------------- Tablet ---------------->
 */
+
+
 
 /* 
                         <---------------- Computador ---------------->
