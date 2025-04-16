@@ -1,316 +1,6 @@
-<!--<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="stylesheet" href="./assets/css/darkTheme.css">
-  <link rel="stylesheet" href="./assets/css/iconsModal.css">
-  <link rel="stylesheet" href="./assets/css/cards.css">
-  <link rel="stylesheet" href="./assets/css/mobile.css">
-  <link rel="stylesheet" href="./assets/css/tablet.css">
-  <link rel="shortcut icon"
-    href="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2FGgreen-removebg-preview.png?alt=media&token=bbb7e6a0-ef5f-41d6-bb2d-c9e0c9d5d609"
-    type="image/x-icon">
-  <script src="https://kit.fontawesome.com/36c242ccb3.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/i18next@21.9.2/dist/umd/i18next.min.js"></script>
-  <script
-    src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
-
-  <title>Guilherme Halter Nunes</title>
-</head>
-
-<body>
-  <header id="header">
-    <img
-      src="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2FGgreen-removebg-preview.png?alt=media&token=bbb7e6a0-ef5f-41d6-bb2d-c9e0c9d5d609"
-      alt="logo" class="logo" id="logoImage" />
-    <ul>
-      <li><a href="#about" class="navLink" data-i18n="about">sobre</a></li>
-      <li><a href="#skills" class="navLink" data-i18n="mySkills">Minhas habilidades</a></li>
-      <li><a href="#projects" class="navLink" data-i18n="projects">Projetos</a></li>
-      <li><a href="#contact" class="navLink" data-i18n="contact">Contato</a></li>
-      <li><i class="fa-solid fa-circle-half-stroke" id="themeToggle"></i></li>
-      <li>
-        <select id="languageSwitcher" title="Selecione o idioma">
-          <option value="pt-BR">
-            Português (pt-BR)
-          </option>
-          <option value="en">
-            English (en)
-          </option>
-        </select>
-      </li>
-    </ul>
-  </header>
-
-  <main>
-    <div id="home" class="sections">
-      <div class="section1">
-        <h3 class="homeSubtitle" data-i18n="helloMyName">Olá, meu nome é</h3>
-        <h1 class="myName" data-i18n="myName">Guilherme Halter Nunes</h1>
-        <h3 class="meDescription" data-i18n="profession">Full Stack, Desenvolvedor Web</h3>
-        <a href="https://www.linkedin.com/in/guilherme-halter-nunes/" class="icons"><i
-            class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/guilhermehalter/" class="icons"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://github.com/GuilhermeHalter" class="icons"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:halter.guilhermenunes@gmail.com?subject text" class="icons">
-          <i class="fa-regular fa-envelope"></i></a>
-
-        <div id="mouse-scroll">
-          <div class="mouse">
-            <div class="mouse-in"></div>
-          </div>
-          <div>
-            <span class="down-arrow-1"></span>
-            <span class="down-arrow-2"></span>
-            <span class="down-arrow-3"></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="section2">
-        <img class="background"
-          src="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2Fbackgroundgreen-removebg-preview.png?alt=media&token=da8c49e6-51c8-4031-b16e-a962b0f4f3ea"
-          alt="" id="backgroundImage" />
-      </div>
-    </div>
-
-    <div id="about" class="About">
-      <div class="section3">
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2Fbackgroundgreen-removebg-preview.png?alt=media&token=da8c49e6-51c8-4031-b16e-a962b0f4f3ea"
-          alt="" id="backgroundImages" />
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2Fperfil.png?alt=media&token=a2c65334-f791-45e2-9647-48ecdc3e9a2a"
-          alt="" class="perfil" />
-      </div>
-
-      <div class="section4">
-        <h1 class="titleAbout" data-i18n="titleAbout">Sobre.</h1>
-        <p class="contAbout" data-i18n="textAboutMe">
-          Sou um programador de 18 anos de Santa Catarina, Brasil. Em 2021,
-          iniciei minha jornada no mundo da programação e desde então venho me
-          aprofundando cada vez mais nesse universo fascinante. Atualmente, me
-          dedico ao desenvolvimento web, tanto front-end quanto back-end, e
-          estou sempre em busca de novos desafios e oportunidades para
-          aprender e crescer.
-        </p>
-      </div>
-    </div>
-
-    <div id="skills" class="MySkills">
-      <div class="section5">
-        <h1 class="skills" data-i18n="titleMySkill">Minhas Habilidades.</h1>
-      </div>
-
-      <div class="cardsSkills">
-        <div class="card frontend">
-          <h2 class="cardTitle">Front-End</h2>
-          <div class="gridIcons">
-            <i class="fa-brands fa-html5" data-name="HTML"></i>
-            <i class="fa-brands fa-css3-alt" data-name="CSS"></i>
-            <i class="fa-brands fa-vuejs" data-name="Vue.js"></i>
-            <i class="fa-brands fa-react" data-name="React.js"></i>
-            <i class="fa-brands fa-react" data-name="React Native"></i>
-            <i class="fa-brands fa-bootstrap" data-name="Bootstrap"></i>
-            <i class="devicon-vitejs-plain" data-name="Vite.js"></i>
-          </div>
-        </div>
-        <div class="card backend">
-          <h2 class="cardTitle">Back-End</h2>
-          <div class="gridIcons">
-            <i class="devicon-postgresql-plain" data-name="PostgreSql"></i>
-            <i class="devicon-microsoftsqlserver-plain" data-name="Microsoft Sql Server"></i>
-            <i class="devicon-mysql-original" data-name="MySql"></i>
-            <i class="devicon-django-plain" data-name="Django"></i>
-          </div>
-        </div>
-        <div class="card languages">
-          <h2 class="cardTitle" data-i18n="programmingLanguages">Linguagens de Programação</h2>
-          <div class="gridIcons">
-            <i class="devicon-javascript-plain" data-name="JavaScript"></i>
-            <i class="devicon-python-plain" data-name="Python"></i>
-            <i class="devicon-c-plain" data-name="C"></i>
-            <i class="devicon-cplusplus-plain" data-name="C plus plus"></i>
-            <i class="devicon-php-plain" data-name="PHP"></i>
-          </div>
-        </div>
-        <div class="card cicd">
-          <h2 class="cardTitle" data-i18n="outras">Outros</h2>
-          <div class="gridIcons">
-            <i class="devicon-git-plain" data-name="Git"></i>
-            <i class="devicon-github-original" data-name="GitHub"></i>
-            <i class="devicon-nodejs-plain" data-name="Node.js"></i>
-            <i class="devicon-npm-original-wordmark" data-name="Npm"></i>
-            <i class="devicon-markdown-original" data-name="MarkDown"></i>
-            <i class="devicon-vscode-plain" data-name="Visual Studio Code"></i>
-            <i class="devicon-figma-plain" data-name="Figma"></i>
-            <i class="devicon-arduino-plain" data-name="Arduino"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="projects" class="Projects">
-
-      <h1 class="skills" data-i18n="titleProjects">Projetos</h1>
-      <div class="Cards">
-        <a href="https://desafio-ponto-vendas-ozd38hbh5-guilherme-halter-nunes-projects.vercel.app/" class="linkSite">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/suiteStore.jpeg?alt=media&token=8996ea9f-6f21-48e2-bf0d-124bf2202914"
-            alt="" class="imgProject" />
-          <div class="contProject">
-            <h2 class="cardTitle">Suite Store</h2>
-            <p class="cardDescription" data-i18n="textSuite">
-              A Suite Store é o projeto que criei para simplificar a gestão e
-              controle de estoque da sua loja. Com ela, você pode manter tudo
-              sob controle, desde o estoque até as vendas.
-            </p>
-          </div>
-          <div class="viewProject">
-            View <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </div>
-        </a>
-
-        <a href="https://github.com/GuilhermeHalter/Desafio-ponto-vendas-PDV-" class="cardGit">
-          <div class="up">
-            <span data-i18n="viewRepository">Exibir repositório no GitHub</span>
-            <i class="devicon-github-original"></i>
-          </div>
-
-          <div class="down">
-            <span data-i18n="tools">Ferramentas usadas nesse projetos</span>
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="devicon-javascript-plain" data-name="JavaScript"></i>
-          </div>
-        </a>
-      </div>
-
-      <div class="Cards">
-        <a href="https://github.com/GuilhermeHalter/Projeto_ControleTermicoSuinos" class="cardGithub">
-          <div class="up">
-            <span data-i18n="viewRepository">Exibir repositório no GitHub</span>
-            <i class="devicon-github-original"></i>
-          </div>
-
-          <div class="down">
-            <span data-i18n="tools">Ferramentas usadas nesse projetos</span>
-            <i class="devicon-arduino-plain" data-name="Arduino"></i>
-            <i class="devicon-cplusplus-plain" data-name="C plus plus"></i>
-
-          </div>
-        </a>
-        <div class="cardProjet">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/ArduinoSuino.jpeg?alt=media&token=2b726efa-529d-4c03-aa40-626dccfc9125"
-            alt="" class="imgProjectA" />
-          <div class="contProject">
-            <h2 class="cardTitle">Controle de Conforto Termico na Creche dos Suinos</h2>
-            <p class="cardDescription" data-i18n="textArduino">
-              Desenvolvi esse projeto no TCC do meu curso técnico em Informática,
-              com o objetivo de controlar o conforto térmico na creche dos suínos, utilizando sensores de temperatura e
-              umidade.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="Cards">
-      <a href="https://museu-velho-mundo-react.vercel.app/" class="linkSite">
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/portifolio-20d01.appspot.com/o/Portifolio%2FprintMuseu.jpeg?alt=media&token=17beef85-cb23-4957-b9be-9448a1f78ab5"
-          alt="" class="imgProject" />
-        <div class="contProject">
-          <h2 class="cardTitle">Museu do Velho Mundo</h2>
-          <p class="cardDescription" data-i18n="textMuseu">
-            O Museu do Velho Mundo é um projeto que criei para simular um
-            museu virtual, onde você pode visualizar obras de arte e
-            esculturas de diversos artistas renomados.
-          </p>
-        </div>
-        <div class="viewProject">
-          View <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </div>
-      </a>
-
-      <a href="https://github.com/GuilhermeHalter/MuseuVelhoMundo-react" class="cardGit">
-        <div class="up">
-          <span data-i18n="viewRepository">Exibir repositório no GitHub</span>
-          <i class="devicon-github-original"></i>
-        </div>
-
-        <div class="down">
-          <span data-i18n="tools">Ferramentas usadas nesse projetos</span>
-          <i class="fa-brands fa-react"></i>
-          <i class="fa-brands fa-css3-alt"></i>
-          <i class="devicon-javascript-plain" data-name="JavaScript"></i>
-
-          <p data-i18n="plusTools">e uma API do Harvard Museums. (Link para a API no Readme do projeto no GitHub)</p>
-        </div>
-      </a>
-    </div>
-
-    <div id="contact" class="Contact">
-      <h1 class="titleContact" data-i18n="titleContact">Contato.</h1>
-
-      <h1 class="subTitleContact" data-i18n="sendEmail">Envie-me um e-mail</h1>
-      <a href="mailto:halter.guilhermenunes@gmail.com?subject text" class="iconsContact">
-        <i class="fa-regular fa-envelope"></i> <p>halter.guilhermenunes@gmail.com</p>
-      </a>
-      
-    </div>
-  </main>
-
-  <div id="skillModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2 class="cardTitle"></h2>
-      <p id="modalSkillName"></p>
-
-      <div class="gridContainer">
-        <div class="gridIcons">
-        </div>
-        <div class="gridName"></div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="col-md-5">
-      <h3 data-i18n="contactUs">Contato</h3>
-      <p>halter.guilhermenunes@gmail.com</p>
-
-    </div>
-    <div class="col-md-6">
-      <h3 data-i18n="followUs">Me siga em</h3>
-      <ul class="social-media">
-        <li><a href="https://www.instagram.com/guilhermehalter/"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/guilherme-halter-nunes/"><i class="fa-brands fa-linkedin-in"></i></a>
-        </li>
-        <li><a href="https://github.com/GuilhermeHalter"><i class="fa-brands fa-github"></i></a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <script src="./assets/javaScript/theme.js"></script>
-  <script src="./assets/javaScript/modal.js"></script>
-  <script src="./assets/javaScript/scroll.js"></script>
-  <script src="./assets/javaScript/translate.js"></script>
-</body>
-
-</html>
--->
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guilherme Halter Nunes</title>
@@ -321,25 +11,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="container">
             <div class="logo">GHN.</div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
             <div class="nav-buttons">
-              <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
-                  <i class="fas fa-moon"></i>
-              </button>
-              <button id="translate-btn" class="icon-btn" aria-label="Change language">
-                  <i class="fas fa-language"></i>
-              </button>
-          </div>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="language-select-container">
+                    <select id="language-select" aria-label="Change language">
+                        <option value="en">English</option>
+                        <option value="pt-br">Português</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -347,12 +39,12 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Hello, I'm <span class="gradient-text">Guilherme Halter Nunes</span></h1>
-                <h2>Full Stack Developer</h2>
-                <p>I build exceptional digital experiences with modern technologies. Focused on creating responsive, user-friendly applications with clean code.</p>
+                <h1><span data-i18n="hero.greeting">Hello, I'm</span> <span class="gradient-text">Guilherme Halter Nunes</span></h1>
+                <h2 data-i18n="hero.title">Full Stack Developer</h2>
+                <p data-i18n="hero.description">I build exceptional digital experiences with modern technologies. Focused on creating responsive, user-friendly applications with clean code.</p>
                 <div class="hero-buttons">
-                    <a href="#projects"><button class="primary-btn">View Projects</button></a>
-                    <a href="#contact"> <button class="outline-btn" >Contact Me</button></a>
+                    <a href="#projects"><button class="primary-btn" data-i18n="hero.viewProjects">View Projects</button></a>
+                    <a href="#contact"><button class="outline-btn" data-i18n="hero.contactMe">Contact Me</button></a>
                 </div>
                 <div class="social-links">
                     <a href="https://github.com/GuilhermeHalter" target="_blank"><i class="fab fa-github"></i></a>
@@ -366,7 +58,7 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+            <h2 class="section-title"><span class="gradient-text" data-i18n="about.title">About Me</span></h2>
             <div class="about-content">
                 <div class="about-image">
                     <div class="image-container">
@@ -374,22 +66,22 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <h3>Who I Am</h3>
-                    <p>I'm a passionate Full Stack Developer with over 5 years of experience building web applications. I specialize in JavaScript technologies across the stack, with expertise in React, Node.js, and modern frameworks.</p>
-                    <p>My journey in tech began when I built my first website at 15. Since then, I've worked with startups and established companies to create scalable, user-friendly applications that solve real-world problems.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through technical articles.</p>
+                    <h3 data-i18n="about.whoIAm">Who I Am</h3>
+                    <p data-i18n="about.paragraph1">I'm a passionate Full Stack Developer with over 5 years of experience building web applications. I specialize in JavaScript technologies across the stack, with expertise in React, Node.js, and modern frameworks.</p>
+                    <p data-i18n="about.paragraph2">My journey in tech began when I built my first website at 15. Since then, I've worked with startups and established companies to create scalable, user-friendly applications that solve real-world problems.</p>
+                    <p data-i18n="about.paragraph3">When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through technical articles.</p>
                     <div class="stats">
                         <div class="stat">
                             <span class="stat-number">5+</span>
-                            <span class="stat-label">Years Experience</span>
+                            <span class="stat-label" data-i18n="about.yearsExperience">Years Experience</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">30+</span>
-                            <span class="stat-label">Projects</span>
+                            <span class="stat-label" data-i18n="about.projects">Projects</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">20+</span>
-                            <span class="stat-label">Happy Clients</span>
+                            <span class="stat-label" data-i18n="about.happyClients">Happy Clients</span>
                         </div>
                     </div>
                 </div>
@@ -400,10 +92,10 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title"><span class="gradient-text">My Skills</span></h2>
+            <h2 class="section-title"><span class="gradient-text" data-i18n="skills.title">My Skills</span></h2>
             
             <div class="skills-category">
-                <h3>Frontend</h3>
+                <h3 data-i18n="skills.frontend">Frontend</h3>
                 <div class="skills-grid">
                     <div class="skill-card">
                         <i class="fab fa-html5"></i>
@@ -437,13 +129,11 @@
                         <i class="fab fa-vuejs"></i>
                         <span class="tooltip">Vue.js</span>
                     </div>
-
-
                 </div>
             </div>
             
             <div class="skills-category">
-                <h3>Backend</h3>
+                <h3 data-i18n="skills.backend">Backend</h3>
                 <div class="skills-grid">
                     <div class="skill-card">
                         <i class="fab fa-node-js"></i>
@@ -463,21 +153,21 @@
                     </div>
                     <div class="skill-card">
                       <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Firebase</title><path d="M19.455 8.369c-.538-.748-1.778-2.285-3.681-4.569-.826-.991-1.535-1.832-1.884-2.245a146 146 0 0 0-.488-.576l-.207-.245-.113-.133-.022-.032-.01-.005L12.57 0l-.609.488c-1.555 1.246-2.828 2.851-3.681 4.64-.523 1.064-.864 2.105-1.043 3.176-.047.241-.088.489-.121.738-.209-.017-.421-.028-.632-.033-.018-.001-.035-.002-.059-.003a7.46 7.46 0 0 0-2.28.274l-.317.089-.163.286c-.765 1.342-1.198 2.869-1.252 4.416-.07 2.01.477 3.954 1.583 5.625 1.082 1.633 2.61 2.882 4.42 3.611l.236.095.071.025.003-.001a9.59 9.59 0 0 0 2.941.568q.171.006.342.006c1.273 0 2.513-.249 3.69-.742l.008.004.313-.145a9.63 9.63 0 0 0 3.927-3.335c1.01-1.49 1.577-3.234 1.641-5.042.075-2.161-.643-4.304-2.133-6.371m-7.083 6.695c.328 1.244.264 2.44-.191 3.558-1.135-1.12-1.967-2.352-2.475-3.665-.543-1.404-.87-2.74-.974-3.975.48.157.922.366 1.315.622 1.132.737 1.914 1.902 2.325 3.461zm.207 6.022c.482.368.99.712 1.513 1.028-.771.21-1.565.302-2.369.273a8 8 0 0 1-.373-.022c.458-.394.869-.823 1.228-1.279zm1.347-6.431c-.516-1.957-1.527-3.437-3.002-4.398-.647-.421-1.385-.741-2.194-.95.011-.134.026-.268.043-.4.014-.113.03-.216.046-.313.133-.689.332-1.37.589-2.025.099-.25.206-.499.321-.74l.004-.008c.177-.358.376-.719.61-1.105l.092-.152-.003-.001c.544-.851 1.197-1.627 1.942-2.311l.288.341c.672.796 1.304 1.548 1.878 2.237 1.291 1.549 2.966 3.583 3.612 4.48 1.277 1.771 1.893 3.579 1.83 5.375-.049 1.395-.461 2.755-1.195 3.933-.694 1.116-1.661 2.05-2.8 2.708-.636-.318-1.559-.839-2.539-1.599.79-1.575.952-3.28.479-5.072zm-2.575 5.397c-.725.939-1.587 1.55-2.09 1.856-.081-.029-.163-.06-.243-.093l-.065-.026c-1.49-.616-2.747-1.656-3.635-3.01-.907-1.384-1.356-2.993-1.298-4.653.041-1.19.338-2.327.882-3.379.316-.07.638-.114.96-.131l.084-.002c.162-.003.324-.003.478 0 .227.011.454.035.677.07.073 1.513.445 3.145 1.105 4.852.637 1.644 1.694 3.162 3.144 4.515z"/></svg>
-                        <span class="tooltip">Firebase</span>
+                      <span class="tooltip">Firebase</span>
                     </div>
                     <div class="skill-card">
                       <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Django</title><path d="M11.146 0h3.924v18.166c-2.013.382-3.491.535-5.096.535-4.791 0-7.288-2.166-7.288-6.32 0-4.002 2.65-6.6 6.753-6.6.637 0 1.121.05 1.707.203zm0 9.143a3.894 3.894 0 00-1.325-.204c-1.988 0-3.134 1.223-3.134 3.365 0 2.09 1.096 3.236 3.109 3.236.433 0 .79-.025 1.35-.102V9.142zM21.314 6.06v9.098c0 3.134-.229 4.638-.917 5.937-.637 1.249-1.478 2.039-3.211 2.905l-3.644-1.733c1.733-.815 2.574-1.53 3.109-2.625.561-1.121.739-2.421.739-5.835V6.059h3.924zM17.39.021h3.924v4.026H17.39z"/></svg>
-                        <span class="tooltip">Django</span>
+                      <span class="tooltip">Django</span>
                     </div>
                     <div class="skill-card">
                       <i class="fa-brands fa-microsoft"></i>
                       <span class="tooltip">Microsoft SQL Server</span>
-                  </div>
+                    </div>
                 </div>
             </div>
 
             <div class="skills-category">
-              <h3>languages</h3>
+              <h3 data-i18n="skills.languages">Languages</h3>
               <div class="skills-grid">
                 <div class="skill-card">
                   <i class="fab fa-js"></i>
@@ -502,11 +192,12 @@
                 <div class="skill-card">
                   <i class="fab fa-php"></i>
                   <span class="tooltip">PHP</span>
+                </div>
               </div>
             </div>
             
             <div class="skills-category">
-                <h3>Tools & Others</h3>
+                <h3 data-i18n="skills.tools">Tools & Others</h3>
                 <div class="skills-grid">
                     <div class="skill-card">
                         <i class="fab fa-git-alt"></i>
@@ -515,7 +206,7 @@
                     <div class="skill-card">
                       <i class="fab fa-github"></i>
                       <span class="tooltip">GitHub</span>
-                  </div>
+                    </div>
                     <div class="skill-card">
                         <i class="fas fa-code-branch"></i>
                         <span class="tooltip">CI/CD</span>
@@ -527,7 +218,7 @@
                     <div class="skill-card">
                       <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Arduino</title><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.49 6.49 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854zM6.53 15.734a3.837 3.837 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777.208 0 .416.017.624.043 2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734zm11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734.208-.026.416-.043.624-.043 2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777zm1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183h1.206zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg>
                       <span class="tooltip">Arduino</span>
-                  </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -536,7 +227,7 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title"><span class="gradient-text">Featured Projects</span></h2>
+            <h2 class="section-title"><span class="gradient-text" data-i18n="projects.title">Featured Projects</span></h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
@@ -548,7 +239,7 @@
                     </div>
                     <div class="project-info">
                         <h3>Suite Store</h3>
-                        <p>Suite Store is a project I created to simplify the management and
+                        <p data-i18n="projects.suiteStore">Suite Store is a project I created to simplify the management and
                           inventory control of your store. With it, you can keep everything
                           under control, from stock to sales.</p>
                         <div class="project-tags">
@@ -568,7 +259,7 @@
                     </div>
                     <div class="project-info">
                         <h3>Museu Velho Mundo</h3>
-                        <p>The Old World Museum is a project I created to simulate a virtual museum, where you can view artworks and sculptures by various renowned artists.</p>
+                        <p data-i18n="projects.museuVelhoMundo">The Old World Museum is a project I created to simulate a virtual museum, where you can view artworks and sculptures by various renowned artists.</p>
                         <div class="project-tags">
                             <span>React.js</span>
                             <span>Vite.js</span>
@@ -586,7 +277,7 @@
                     </div>
                     <div class="project-info">
                         <h3>Controle termico de Suinos</h3>
-                        <p>I developed this project as part of my technical course final project in Computer Science, aiming to control the thermal comfort in pig nurseries using temperature and humidity sensors.</p>
+                        <p data-i18n="projects.controleSuinos">I developed this project as part of my technical course final project in Computer Science, aiming to control the thermal comfort in pig nurseries using temperature and humidity sensors.</p>
                         <div class="project-tags">
                             <span>Arduino</span>
                         </div>
@@ -594,7 +285,7 @@
                 </div>
             </div>
             <div class="center-btn">
-                <button class="primary-btn">View All Projects</button>
+                <button class="primary-btn" data-i18n="projects.viewAll">View All Projects</button>
             </div>
         </div>
     </section>
@@ -602,11 +293,11 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title"><span class="gradient-text">Get In Touch</span></h2>
+            <h2 class="section-title"><span class="gradient-text" data-i18n="contact.title">Get In Touch</span></h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p>I'm currently available for freelance work and full-time positions. If you have a project that needs coding or if you're looking to hire, please get in touch.</p>
+                    <h3 data-i18n="contact.infoTitle">Contact Information</h3>
+                    <p data-i18n="contact.infoText">I'm currently available for freelance work and full-time positions. If you have a project that needs coding or if you're looking to hire, please get in touch.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
@@ -624,18 +315,18 @@
                 </div>
                 <form class="contact-form">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your Name">
+                        <label for="name" data-i18n="contact.name">Name</label>
+                        <input type="text" id="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="Your Name">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="your@email.com">
+                        <label for="email" data-i18n="contact.email">Email</label>
+                        <input type="email" id="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="your@email.com">
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="5" placeholder="Your message here..."></textarea>
+                        <label for="message" data-i18n="contact.message">Message</label>
+                        <textarea id="message" rows="5" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Your message here..."></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn" data-i18n="contact.send">Send Message</button>
                 </form>
             </div>
         </div>
@@ -646,7 +337,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="logo">Guilherme</div>
-                <div class="copyright">© 2023 Guilherme Halter Nunes. All rights reserved.</div>
+                <div class="copyright">© 2023 Guilherme Halter Nunes. <span data-i18n="footer.rights">All rights reserved.</span></div>
                 <div class="footer-social">
                     <a href="https://github.com/GuilhermeHalter" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/guilherme-halter-nunes/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -655,7 +346,8 @@
             </div>
         </div>
     </footer>
-    <script src="./assets/javaScript/translate.js"></script>
-</body>
 
+    <script src="./assets/javaScript/translate.js"></script>
+    <script src="./assets/javaScript/translations.js"></script>
+</body>
 </html>

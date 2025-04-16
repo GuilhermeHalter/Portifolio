@@ -864,3 +864,43 @@ footer {
     text-align: center;
   }
 }
+
+.language-select-container {
+  position: relative;
+  margin-left: 10px;
+}
+
+#language-select {
+  appearance: none;
+  background-color: transparent;
+  color: var(--text, var(--text-color));
+  border: 1px solid var(--border, var(--border-color));
+  border-radius: 6px;
+  padding: 8px 30px 8px 12px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#language-select:hover {
+  border-color: var(--primary-color);
+}
+
+#language-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
+}
+
+.language-select-container::after {
+  content: '\f0d7';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
